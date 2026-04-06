@@ -357,6 +357,31 @@ body {
 }
 
 
+/* Hide the top header bar on mobile, show on desktop */
+@media (max-width: 768px) {
+  .header-top {
+    display: none;   /* hidden on phones/tablets */
+  }
+  .navbar {
+    top: 0;          /* navbar moves to very top when header is hidden */
+  }
+  body {
+    padding-top: 70px; /* only navbar height on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .header-top {
+    display: block;  /* visible on desktop */
+  }
+  .navbar {
+    top: 44px;       /* sits below header-top on desktop */
+  }
+  body {
+    padding-top: 120px; /* header-top + navbar height */
+  }
+}
+
 /* ================= HERO SECTION ================= */
 /* ================= HERO FULLSCREEN ================= */
 /* Base style for all SAMS slides */
