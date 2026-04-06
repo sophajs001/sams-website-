@@ -1,2 +1,2 @@
-# sams.edu.ng
+# sams-website-
 seminary website
