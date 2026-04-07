@@ -147,48 +147,77 @@
 </head>
 <body>
    
- 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reflections Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Reflections Archive</h1>
-      <p>Browse all past reflections and homilies</p>
+    <div class="container"> <!-- added container for alignment -->
+      <div class="hero-text text-center">
+        <h1>Reflections Archive</h1>
+        <p>Browse all past reflections and homilies</p>
+      </div>
     </div>
   </section>
 
   <!-- Main Content -->
-  <div class="archive-container">
-    <h2>All Reflections</h2>
+  <section class="archive-section">
+    <div class="container"> <!-- same container for alignment -->
+      <h2>All Reflections</h2>
 
-    <!-- Search and Filter -->
-    <div class="archive-search">
-      <input 
-        type="text" 
-        id="searchArchive" 
-        placeholder="Search reflections by keyword..." 
-        onkeyup="filterReflections()"
-      />
-      <select id="sortArchive" onchange="sortReflections()">
-        <option value="newest">Newest First</option>
-        <option value="oldest">Oldest First</option>
-      </select>
+      <!-- Search and Filter -->
+      <div class="archive-search d-flex gap-3 mb-4">
+        <input 
+          type="text" 
+          id="searchArchive" 
+          placeholder="Search reflections by keyword..." 
+          onkeyup="filterReflections()"
+        />
+        <select id="sortArchive" onchange="sortReflections()">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
+      </div>
+
+      <!-- Archive List -->
+      <div class="archive-list" id="archiveList">
+        <div class="archive-item">
+          <h3><a href="reflection1.html">Sunday Reflection: Faith & Hope</a></h3>
+          <p class="archive-date">March 29, 2026</p>
+          <p class="archive-excerpt">A reflection on the importance of faith and hope in daily life...</p>
+          <a href="reflection1.html" class="archive-btn">Read More</a>
+        </div>
+
+        <div class="archive-item">
+          <h3><a href="reflection2.html">Lenten Homily: Journey of Renewal</a></h3>
+          <p class="archive-date">March 15, 2026</p>
+          <p class="archive-excerpt">Exploring the spiritual meaning of Lent and renewal through prayer...</p>
+          <a href="reflection2.html" class="archive-btn">Read More</a>
+        </div>
+
+        <div class="archive-item">
+          <h3><a href="reflection3.html">Christmas Reflection: Light of the World</a></h3>
+          <p class="archive-date">December 25, 2025</p>
+          <p class="archive-excerpt">Celebrating the birth of Christ and the gift of divine light...</p>
+          <a href="reflection3.html" class="archive-btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- No Results Message -->
+      <div class="no-results" id="noResults" style="display: none;">
+        No reflections found matching your search.
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination"></div>
     </div>
-
-    <!-- Archive List -->
-    <div class="archive-list" id="archiveList">
-      <!-- Items will be populated by JavaScript -->
-    </div>
-
-    <!-- No Results Message -->
-    <div class="no-results" id="noResults" style="display: none;">
-      No reflections found matching your search.
-    </div>
-
-    <!-- Pagination -->
-    <div class="pagination" id="pagination"></div>
-  </div>
-
-
+  </section>
 <!-- ================= SAMS FOOTER (CUSTOMIZED FOR ST. AUGUSTINE MAJOR SEMINARY JOS) ================= -->
 <footer class="sams-footer">
   <div class="sams-footer-bg"></div>
