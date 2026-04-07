@@ -46,8 +46,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 25px;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
   border-radius: 50%;
@@ -57,8 +56,8 @@ body {
 }
 
 .social-icon:hover {
-  background-color: #ffd60a;
-  color: #2d6a4f;
+  background-color: #00a109;
+  color: #094411;
   transform: translateY(-2px);
 }
 
@@ -390,6 +389,21 @@ body {
   width: 100%;
   height: 100vh;       /* full viewport height */
   overflow: hidden;
+}
+
+/* Remove underline from carousel buttons */
+.sams-first-btn,
+.sams-second-btn,
+.sams-third-btn,
+.sams-fourth-btn {
+  text-decoration: none;   /* removes underline */
+}
+
+.sams-first-btn:hover,
+.sams-second-btn:hover,
+.sams-third-btn:hover,
+.sams-fourth-btn:hover {
+  text-decoration: none;   /* keep underline off on hover too */
 }
 
 /* Images */
@@ -2029,6 +2043,17 @@ PRAYER SECTION CSS
 
 
 /* ================= SAMS FOOTER (exact replica) ================= */
+/* Default: desktop view */
+.sams-footer-desc {
+  text-align: justify;
+}
+
+/* Mobile view: center text */
+@media (max-width: 700px) {
+  .sams-footer-desc {
+    text-align: center;
+  }
+}
 
 .sams-footer {
   position: relative;
@@ -2045,7 +2070,7 @@ PRAYER SECTION CSS
   background-image: url("images/sams\ image\ 6.webp");
   background-size: cover;
   background-position: center;
-  opacity: 0.18; /* subtle darkened background */
+  opacity: 0.28; /* subtle darkened background */
   filter: brightness(0.25) contrast(0.85);
   z-index: 1;
 }
@@ -4767,6 +4792,24 @@ body { font-family: Arial, sans-serif; background-color: #f0f2f5; color: #333; }
 
 
 
+.social-btn {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 6px 8px;       /* smaller padding */
+  border-radius: 50%;
+  font-size: 0.7rem;      /* smaller icon size */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 6px;
+}
+
+.social-btn:hover {
+  background-color: white;
+  color:green;
+  border: 0px solid green; /* lighter border */
+  text-decoration: none;
+}
 
 
 
@@ -5767,8 +5810,7 @@ archive-container {
 }
 
 .social-icon {
-  font-size: 1.2rem;
-  color: #2d6a4f;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
