@@ -6437,7 +6437,7 @@ img[loading="lazy"].loaded {
 }
 
 .publication-grid,
-.row.g-4 {
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -6445,8 +6445,7 @@ img[loading="lazy"].loaded {
 
 @media (max-width: 992px) {
   .gallery-grid,
-  .publication-grid,
-  .row.g-4 {
+  .publication-grid {
     grid-template-columns: 1fr;
   }
 }
