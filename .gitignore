@@ -1,0 +1,47 @@
+# Laravel Framework
+bootstrap/cache/
+storage/
+vendor/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.phpunit.result.cache
+.coverage
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+
+# Composer
+composer.lock
+
+# Logs
+*.log
+
+# User uploads (optional - uncomment if storing in git)
+# storage/uploads/*
+
+# Compiled assets
+public/hot
+public/js/app.js
+public/css/app.css

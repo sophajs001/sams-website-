@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theology Department | St Augustine's Major Seminary Jos Nigeria</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Theology Department at St Augustine's Major Seminary Jos offers comprehensive theological education, priestly formation, and advanced studies in sacred theology leading to Bachelor's Degree (B.ST).">
+  <meta name="keywords" content="theology department, sacred theology, theological education, priestly formation, B.ST degree, theological courses, Jos seminary">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Theology Department | St Augustine's Major Seminary Jos">
+  <meta property="og:description" content="Comprehensive theology program with priestly formation and sacred studies.">
+  <meta property="og:image" content="images/sams logo.jpeg">
+  <meta property="og:url" content="theology.html">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Theology Page Specific Styles */
+    .theology-hero {
+      background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+      color: white;
+      padding: 100px 0 60px;
+      margin-top: 120px;
+    }
+
+    .theology-hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .theology-hero p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .program-nav {
+      background: white;
+      border-bottom: 3px solid #1b6342;
+      position: sticky;
+      top: 120px;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .program-nav .nav-link {
+      color: #1b6342 !important;
+      font-weight: 600;
+      padding: 12px 18px !important;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .program-nav .nav-link:hover,
+    .program-nav .nav-link.active {
+      color: #2d6a4f !important;
+      border-bottom-color: #40916c;
+      background-color: #f0f5f0;
+    }
+
+    .section-card {
+      background: white;
+      border-left: 5px solid #2d6a4f;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .section-card h2 {
+      color: #1b6342;
+      font-weight: 900;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #40916c;
+    }
+
+    .section-card h3 {
+      color: #2d6a4f;
+      font-weight: 700;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .course-card {
+      background: #f9faf9;
+      border: 1px solid #e0e8e4;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .course-card:hover {
+      box-shadow: 0 6px 16px rgba(45, 106, 79, 0.12);
+      border-color: #2d6a4f;
+      transform: translateY(-2px);
+    }
+
+    .course-code {
+      display: inline-block;
+      background: #2d6a4f;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-right: 8px;
+    }
+
+    .course-title {
+      font-weight: 600;
+      color: #1b6342;
+      font-size: 1.05rem;
+    }
+
+    .course-credits {
+      color: #666;
+      font-size: 0.9rem;
+      float: right;
+    }
+
+    .year-section {
+      margin-bottom: 50px;
+    }
+
+    .year-header {
+      background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+      color: white;
+      padding: 20px 25px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-weight: 900;
+      font-size: 1.3rem;
+    }
+
+    .requirement-box {
+      background: #e8f5e9;
+      border-left: 4px solid #2d6a4f;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .requirement-box strong {
+      color: #1b6342;
+    }
+
+    .table-responsive {
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .table {
+      margin-bottom: 0;
+    }
+
+    .table thead {
+      background: #1b6342;
+      color: white;
+    }
+
+    .table thead th {
+      font-weight: 700;
+      border-bottom: 2px solid #2d6a4f;
+      vertical-align: middle;
+    }
+
+    .table tbody tr {
+      border-bottom: 1px solid #e0e8e4;
+    }
+
+    .table tbody tr:hover {
+      background-color: #f5f9f7;
+    }
+
+    .table tbody td {
+      vertical-align: middle;
+      padding: 15px;
+    }
+
+    .course-card.clickable {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .course-card.clickable:active {
+      background: #e8f5e9;
+    }
+
+    .course-description {
+      background: white;
+      border: 1px solid #2d6a4f;
+      border-top: none;
+      padding: 20px;
+      margin-top: -15px;
+      margin-bottom: 15px;
+      border-radius: 0 0 8px 8px;
+      display: none;
+      animation: slideDown 0.3s ease;
+    }
+
+    .course-description.show {
+      display: block;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        max-height: 0;
+      }
+      to {
+        opacity: 1;
+        max-height: 1000px;
+      }
+    }
+
+    .course-description h4 {
+      color: #1b6342;
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-top: 0;
+      border-bottom: 2px solid #40916c;
+      padding-bottom: 10px;
+    }
+
+    .course-description p {
+      margin-bottom: 10px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .bibliography {
+      background: linear-gradient(135deg, #f9faf9 0%, #f0f5f0 100%);
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 15px;
+      border-left: 3px solid #2d6a4f;
+    }
+
+    .bibliography strong {
+      color: #1b6342;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    .bibliography ul {
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+
+    .bibliography li {
+      margin-bottom: 6px;
+      color: #444;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .grading-table {
+      font-size: 0.9rem;
+    }
+
+    .theme-item {
+      background: #f9faf9;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-left: 3px solid #2d6a4f;
+      border-radius: 4px;
+    }
+
+    .theme-item strong {
+      color: #1b6342;
+      display: inline-block;
+      min-width: 50px;
+      background: #2d6a4f;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-right: 10px;
+      font-size: 0.9rem;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #e8f5e9;
+      color: #1b6342;
+    }
+
+    .accordion-button {
+      color: #1b6342;
+      font-weight: 600;
+    }
+
+    .accordion-button:focus {
+      border-color: #2d6a4f;
+      box-shadow: 0 0 0 0.25rem rgba(45, 106, 79, 0.25);
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f5 100%);
+      border: 2px solid #2d6a4f;
+      padding: 25px;
+      border-radius: 8px;
+      margin: 30px 0;
+    }
+
+    .highlight-box h3 {
+      color: #1b6342;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .theology-hero {
+        padding: 60px 0 40px;
+        margin-top: 70px;
+      }
+
+      .theology-hero h1 {
+        font-size: 2rem;
+      }
+
+      .program-nav {
+        top: 70px;
+        overflow-x: auto;
+      }
+
+      .program-nav .nav-link {
+        white-space: nowrap;
+        padding: 10px 12px !important;
+        font-size: 0.9rem;
+      }
+
+      .section-card {
+        padding: 20px;
+      }
+
+      .table-responsive {
+        font-size: 0.85rem;
+      }
+
+      .table tbody td {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="header-top">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="follow-us">
+            <span>Follow Us:</span>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 text-end">
+          <div class="contact-info">
+            <span><i class="bi bi-geo-alt"></i> Jos, Nigeria</span>
+            <span><i class="bi bi-envelope"></i> info@samsjos.edu.ng; Tel: 090800000001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/sams logo.jpeg" alt="Logo" class="me-2 rounded-circle" height="40" width="40" loading="lazy">
+        <span class="fw-bold fs-6 d-none d-md-inline">St Augustine's Major Seminary</span>
+        <span class="fw-bold fs-6 d-inline d-md-none">SAMS</span>
+      </a>
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+              <li><a class="dropdown-item" href="admission.html"><i class="bi bi-arrow-right-short"></i> Admission</a></li>
+              <li><a class="dropdown-item" href="philosophy-department.html"><i class="bi bi-arrow-right-short"></i> Philosophy Department</a></li>
+              <li><a class="dropdown-item" href="theology.html"><i class="bi bi-arrow-right-short"></i> Theology Department</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="reflection-btn" href="reflection.html">📖 Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="theology-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1>Theology Department</h1>
+          <p>Advanced Sacred Theology Education & Priestly Formation</p>
+          <p class="mt-3">A comprehensive four-year program leading to Bachelor of Sacred Theology (B.ST) degree, affiliated with Pontificia Universitas Urbaniana, Rome.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Tabs -->
+  <nav class="program-nav">
+    <div class="container-fluid">
+      <div class="nav nav-tabs border-0" id="programNav" role="tablist">
+        <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+        <button class="nav-link" id="structure-tab" data-bs-toggle="tab" data-bs-target="#structure" type="button" role="tab" aria-controls="structure" aria-selected="false">Program Structure</button>
+        <button class="nav-link" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses" type="button" role="tab" aria-controls="courses" aria-selected="false">Courses</button>
+        <button class="nav-link" id="grading-tab" data-bs-toggle="tab" data-bs-target="#grading" type="button" role="tab" aria-controls="grading" aria-selected="false">Grading</button>
+        <button class="nav-link" id="themes-tab" data-bs-toggle="tab" data-bs-target="#themes" type="button" role="tab" aria-controls="themes" aria-selected="false">Exam Themes</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <div class="tab-content" id="programTabContent">
+
+      <!-- OVERVIEW TAB -->
+      <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+        
+        <div class="section-card" data-aos="fade-up">
+          <h2><i class="bi bi-book"></i> Academic Programme Overview</h2>
+          
+          <h3>Programme Duration & Structure</h3>
+          <p>The academic programme lasts <strong>four years</strong>, divided into <strong>two semesters per year</strong>. Courses are examined at the end of each semester, with continuous assessment included throughout.</p>
+
+          <div class="highlight-box">
+            <h3>Programme Focus Areas</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Major Courses</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle text-success"></i> Scripture</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Moral Theology</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Dogmatic Theology</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Liturgy</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Church History</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Canon Law</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Pastoral Theology</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Mission Theology</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>Supporting Areas</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Pastoral Courses:</strong> Practical ministry preparation</li>
+                  <li><strong>General Studies:</strong> Research methods, languages, communication, leadership</li>
+                  <li><strong>Research Project:</strong> Compulsory long essay submitted in final year</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3>Degree Award</h3>
+          <p><strong>Bachelor's Degree in Sacred Theology (B.ST)</strong> - Awarded by Pontificia Universitas Urbaniana, Rome</p>
+
+          <h3>Degree Requirements</h3>
+          <ul>
+            <li>50% average in major subjects</li>
+            <li>40% in minor subjects</li>
+            <li>Completion of research paper</li>
+            <li>Pass written comprehensive exam</li>
+            <li>Pass oral examination</li>
+          </ul>
+        </div>
+
+        <div class="section-card" data-aos="fade-up">
+          <h2><i class="bi bi-file-check"></i> Examination Requirements</h2>
+          
+          <div class="requirement-box">
+            <strong><i class="bi bi-exclamation-circle"></i> Attendance:</strong> Minimum 75% attendance required
+          </div>
+
+          <div class="requirement-box">
+            <strong><i class="bi bi-x-circle"></i> Failing Grade:</strong> Below 40% is considered a fail
+          </div>
+
+          <div class="requirement-box">
+            <strong><i class="bi bi-arrow-repeat"></i> Resit Maximum:</strong> Resit grades capped at 60%
+          </div>
+
+          <div class="requirement-box">
+            <strong><i class="bi bi-graph-down"></i> Academic Probation:</strong> Failure of multiple courses leads to repetition of the year
+          </div>
+
+          <h3>Mark Distribution (Final Grade)</h3>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><strong>Continuous Assessment:</strong></td>
+                  <td class="text-end"><strong>30%</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Written Examination:</strong></td>
+                  <td class="text-end"><strong>50%</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Oral Examination:</strong></td>
+                  <td class="text-end"><strong>20%</strong></td>
+                </tr>
+                <tr style="background-color: #1b6342; color: white;">
+                  <td><strong>TOTAL:</strong></td>
+                  <td class="text-end"><strong>100%</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- STRUCTURE TAB -->
+      <div class="tab-pane fade" id="structure" role="tabpanel" aria-labelledby="structure-tab">
+        
+        <div class="section-card" data-aos="fade-up">
+          <h2><i class="bi bi-layers"></i> Course Requirements by Year</h2>
+          
+          <p>The following table shows the minimum balance between required courses, major subject electives, and general studies:</p>
+
+          <div class="table-responsive">
+            <table class="table grading-table">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Required</th>
+                  <th>Major/Subjects</th>
+                  <th>Outside Major</th>
+                  <th>General Studies</th>
+                  <th class="text-end">Total Credits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Year I</strong></td>
+                  <td>30</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td class="text-end"><strong>45</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Year II</strong></td>
+                  <td>34</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td class="text-end"><strong>46</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Year III</strong></td>
+                  <td>32</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td class="text-end"><strong>48</strong></td>
+                </tr>
+                <tr style="background-color: #e8f5e9;">
+                  <td><strong>Year IV</strong></td>
+                  <td>42</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td class="text-end"><strong>42</strong></td>
+                </tr>
+                <tr style="background-color: #1b6342; color: white;">
+                  <td><strong>TOTALS</strong></td>
+                  <td>138</td>
+                  <td>15</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td class="text-end"><strong>186</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="requirement-box">
+            <i class="bi bi-info-circle"></i> <strong>Minimum Grade Requirement:</strong> Candidates must obtain at least <strong>40%</strong> in all courses taken.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COURSES TAB -->
+      <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
+        
+        <!-- YEAR I -->
+        <div class="year-section" data-aos="fade-up">
+          <div class="year-header"><i class="bi bi-1-circle-fill"></i> YEAR I COURSES</div>
+
+          <div class="section-card">
+            <h3>Compulsory Courses (30 Credits)</h3>
+            
+            <!-- REL 111 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 111</span>
+              <span class="course-title">Introduction to the New Testament</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The Greco-Roman and Jewish worlds of the first century A.D. The origin and nature of the New Testament writings. The historico-critical methods, with particular reference to Bultmann, the new quest for the historical Jesus. Canonical criticism. The New Testament as the Word of God. Select N.T. themes, with detailed study of relevant texts.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Brown R.E., An Introduction to the New Testament (Bangalore: Theological Publications in India, 2000).</li>
+                  <li>Brown R.E. Et al (eds.), The New Jerome Biblical Commentary (Ibadan: St. Pauls Publications, 2007).</li>
+                  <li>Brown R.E., New Testament Documents: Are they Reliable? (Michigan: W.B. Erdman Grand Rapids, 1960).</li>
+                  <li>Bruce F.F., New Testament History (London: Nelson Publishers, 1969).</li>
+                  <li>Etiene Charpentier, How to Read the New Testament (Bombay: St. Paul's Publications, 1995).</li>
+                  <li>Kimmel W., Introduction to the New Testament (London: SCM Press Ltd., 1975).</li>
+                  <li>Luke K., The TPI Companion to the Bible, Vol. II: New Testament (Bangalore: Theological Publications in India, 1994).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 112 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 112</span>
+              <span class="course-title">Historical Books of the Old Testament</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course deals with the change from nagid (prince) to melek (king). The kingships of Saul, David and Solomon will be examined, pointing to the style of the Deuteronomic Historian. The History will continue through the fall of Samaria to the Exile.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Campbell A.F., Of Prophets and Kings (Washington: 1986).</li>
+                  <li>Gray J., Joshua, Judges and Ruth (London: Century Books, 1967).</li>
+                  <li>Nelson R.D., The Double Redaction of the Deuteronomic History (Sheffield: Academic Press, 1981).</li>
+                  <li>Noth M., The Deuteronomistic History (Sheffield: Academic Press, 1981).</li>
+                  <li>Brown R.E. et al (eds.), The New Jerome Biblical Commentary (Ibadan: St. Paul's Publications, 2007).</li>
+                  <li>Weippert M., The Settlement of the Israelite Tribes in Palestine (London: SBT., 1980).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 113 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 113</span>
+              <span class="course-title">Introduction to Christian Ethics</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course will examine various issues in ethics, such as right and wrong in human conduct, conditions of limitations to human freedom, the place of law in Ethics, the idea of reward and punishment, and conscience as a norm of morality; it will also examine "situation ethics" with regard to absolutes in morality.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Barclay William, Ethics in a Permissive Society (London: Collin Fontana Books, 1971).</li>
+                  <li>Dietrich and Alice Von Hildebrand, Ethics (Chicago: Franciscan Herald Press, 1966).</li>
+                  <li>Edwin F. Healy, Moral Guidance (Illinois: Loyola University Press, 1960).</li>
+                  <li>Eli William, Understanding Catholic Morality (New York: Cross Herder Book, 1997).</li>
+                  <li>Haring Bernard, The Law of Christ Vol. I (Cork: The Percier Press, 1963).</li>
+                  <li>Helmut Thielicke, Theological Ethics Vol. I (Michigan: William B. Eerdman's Publishing Company, 1966).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 114 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 114</span>
+              <span class="course-title">Introduction to the Gospels</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course examines the nature and purpose of the Four Gospels. The transmission of the primitive tradition, the relation between transmission and interpretation and the relation between the Synoptic and the Fourth Gospels. It will also examine the modern criticism of the Gospels.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Gerhardson Birger, The Origins of the Gospel Traditions (London, 1979).</li>
+                  <li>"Instruction of the Pontifical Biblical Commission: The Interpretation of the Bible in the Church" (1994).</li>
+                  <li>Sandy W. (ed.) Studies in the Synoptic Problem (Oxford, MCMXI).</li>
+                  <li>Vawter Bruce, The Four Gospels: An Introduction (Dublin & Sydney, 1967).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 115 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 115</span>
+              <span class="course-title">Ecclesiology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course shall be concerned with the etymology and the interpretations of the word "Church". The mysterious nature of the Church, and the mystery of the Church as a people gathered together by the Trinity (God). The development of Ecclesiology. Models and Paradigms of the Church. The four marks of the Church One, Holy, Catholic and Apostolic. Apostolic Succession, Papacy and Collegiality. The Laity in the Church. The Sacraments of the Church and their role in Church union and dialogue. The Holy Spirit and the Church.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Dulles Avery, Models of the Church (New York: Double Day, 1987).</li>
+                  <li>Flannery Austin, Vatican Council II: The Conciliar and Post Conciliar Documents Vol I (Dublin: Dominican Publications, 1988).</li>
+                  <li>McBrien Richard P. Catholicism (San Francisco: Harpercollins, 1994).</li>
+                  <li>Paul John II, Post-Synodal Apostolic Exhortation - Ecclesia in Africa (Rome: 1995).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 116 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 116</span>
+              <span class="course-title">Ancient & Medieval Church History</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The introduction to the study of Ecclesiastical history in the early and medieval periods will be the concentration of this course. Attention will be given to the period of Christ, expansion of Christianity, Christian martyrs, Christian communion, doctrinal disputes and the growth of the Church as an organization. The medieval aspect will look at the fall of the empire, the great invasions and the formation of medieval Christianity.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Gibbon Edward, The Decline and Fall of the Roman Empire (England: Penguine Books, 1985).</li>
+                  <li>Neill Thomas P. & Schmandt Raymond H. (Eds.), History of the Catholic Church (Milwaukee: Bruce, 1957).</li>
+                  <li>Rizzo Francesco Paolo, La Chiesa Dei Primi Secoli: Lineamenti Storici (Bari: Edipuglia, 1999).</li>
+                  <li>Wand J.W.C., A History of the Early Church to AD 500 (New York: Methuen 1982).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 121 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 121</span>
+              <span class="course-title">Principles of Hermeneutics</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The meaning of Hermeneutics and its relevance to Biblical Studies. Survey of the main trends in Biblical hermeneutics: the historico-critical method, Demythologization, recent hermeneutic trends, with particular reference to selected seminal thinkers, structuralism and the New Hermeneutics.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Benedict XV, Spiritus Paraclitus (On the Fifteenth Centenary of St. Jerome, 1920).</li>
+                  <li>Bleicher J., Contemporary Hermeneutics: Hermeneutics as Method, Philosophy and Critique (Suffolk: Routledge and Kegan Ltd., 1980).</li>
+                  <li>Graham H.G., Where We Got the Bible: Our Debt to the Catholic Church (London: TAN Books, 1987).</li>
+                  <li>Mattam Z., Opening the Bible: Meeting Christ in the Scriptures (Bangalore: KJC Publications, 1998).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 100 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 100</span>
+              <span class="course-title">Introduction to Canon Law</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p><strong>Topics Covered:</strong> Preliminary notions, General notions of Law, What is Canon Law and its purpose, Sources of Canon Law, The history of the 1983 Code and its principle of revision according to Vatican II, The Structure of the Code, Characteristics of Canon Law, Canonical Methodology and rules for interpretation.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Beal J. P., Coriden J. A., Green T. J., New Commentary on the Code of Canon Law (New York: Paulist Press, 2000).</li>
+                  <li>Caparros E., Theriault M. and Thom J., eds. Canon Law Annotated (Montreal: Wilson and Lafleur Ltd., 1993).</li>
+                  <li>Coriden James, An Introduction to Canon Law (New York: Paulist Press, 1991).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 101 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 101</span>
+              <span class="course-title">Liturgy</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p><strong>Topics:</strong> General Principles of the Liturgy: Essence and purpose of the Liturgy; principles and practice of liturgical education in view of renewal using the Vatican II documents on Liturgy. The Liturgical Year: its history, theology, temporal and sanctoral reforms, effective celebration. Popular devotions in the Church.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Adolf Adam, Foundation of Liturgy: An Introduction to its History and Practice (Minnesota: The Liturgical Press, 1985).</li>
+                  <li>Flannery Austin, ed. Vatican Council II: Conciliar and Post Conciliar Documents (New York: Costello Publishing Company, 1988).</li>
+                  <li>Lang J. P., Dictionary of the Liturgy (NY: Catholic Book Publishing Co., 1989).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 112 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 112</span>
+              <span class="course-title">Fundamental Theology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The definition of Fundamental Theology as a branch of Theology, its history and specific character. Special attention should be given to the theology of Revelation; the two main sources of revelation: Sacred Scripture and Sacred Tradition. The theology of faith, religious experience, Dei Verbum of Vatican II Council should be closely studied.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Congregation for the Doctrine of Faith, Dominus Iesus: On the Unicity and Salvific Universality of Jesus Christ and the Church (Vatican City, 2000).</li>
+                  <li>Fires Heinrich, Fundamental Theology (Washington D.C.: The Catholic University of American Press, 1985).</li>
+                  <li>Rahner K., Foundations of Christian Faith (New York: Crossroad Publishing Co., 1994).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- GSS 001 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 001</span>
+              <span class="course-title">The Use of English (2 semesters)</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Basic elements of English grammar, with particular reference to structure, types of sentences, punctuation, and common faults. Reading efficiency, and note-taking. Writing skills including the preparation of essays and examinations. Summary, Comprehension and the development of vocabulary.</p>
+            </div>
+
+            <!-- GSS 004 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 004</span>
+              <span class="course-title">Interpersonal Communication</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course studies the role and the place of the art of communication in the social environment. Areas to be studied include the types and forms of interpersonal communication, self-esteem and communication, inter-human relationships and communication, listening skills, the communication climate, managing interpersonal conflict through communication.</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Elective Courses - Within Major Subject Area (2-3 Credits)</h3>
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 117</span>
+              <span class="course-title">The Rise and Spread of Islam</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course deals with events in Arabia before the advent of Islam; it also examines the life of the Prophet Muhammad, the Quran and the Pillars of Islam.</p>
+            </div>
+            
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 122</span>
+              <span class="course-title">Introduction to New Testament Greek Morphology</span>
+              <span class="course-credits">3 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Introduction to the Greek alphabet, declensions, conjugations, basic grammar and syntax.</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Elective Courses - Outside Major Subject Area (2 Credits)</h3>
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 118</span>
+              <span class="course-title">Basic Concepts of African Religion</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This is an examination of correct approaches to the study of Religions in general and African Traditional Religion in particular. It will examine the definitions and origin of Religion and nature of African Religion.</p>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 119</span>
+              <span class="course-title">Problems of Philosophy</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>This course will examine: The problem of evil - the position of Augustine and Schleimacher. The soul, immortality, resurrection: the problem of miracles: religion and science: mythology in religion.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- YEAR II -->
+        <div class="year-section" data-aos="fade-up">
+          <div class="year-header"><i class="bi bi-2-circle-fill"></i> YEAR II COURSES</div>
+
+          <div class="section-card">
+            <h3>Compulsory Courses (32 Credits)</h3>
+            
+            <!-- REL 211 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 211</span>
+              <span class="course-title">Old Testament Wisdom Literature</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>A literary, historical and theological study of the books of Proverbs, Job, Ecclesiastes and Song of Songs. Their wisdom tradition and literary forms. The figure of Wisdom personified. The theology of the wisdom books as it relates to the Hellenistic world and to Jewish thought.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Clifford R.E., Wisdom Literature (Dublin: Gill and Macmillan, 1999).</li>
+                  <li>Donne R., The Wisdom Literature (London: Theological Publications, 1998).</li>
+                  <li>Emmet Dorothy, The Role of Aesthetics in Moral Theory (London: Macmillan Press Ltd., 1994).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 212 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 212</span>
+              <span class="course-title">The Pauline Epistles</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>A systematic study of the authorship, date and character of the Pauline epistles and their historical situation. Detailed study of selected epistles: themes such as justification by faith, Christian living, church authority, eschatology. The problem of the disputed epistles: Colossians, Ephesians, Thessalonians and the Pastoral Epistles.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Brown R.E., An Introduction to the New Testament (Bangalore: Theological Publications in India, 2000).</li>
+                  <li>Fitzmeyer J.A., Romans: A New Translation with Introduction and Commentary (New York: Doubleday, 1993).</li>
+                  <li>Kummel W.G., Introduction to the New Testament (London: SCM Press Ltd., 1975).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 213 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 213</span>
+              <span class="course-title">Dogmatic Theology I: God and Creation</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The proofs for God's existence and nature. The attributes of God: immutability, infinity, simplicity and impassibility. The Trinity in the Old Testament, New Testament and in Post-Nicene Theology. The doctrine of creation, ex nihilo, as found in Biblical sources and later development in Christian Theology. Creation in time versus eternity. The problem of evil and theodicy.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Flannery A., ed. Vatican Council II: Conciliar and Post-Conciliar Documents (Dublin: Dominican Publications, 1975).</li>
+                  <li>Rahner K., Foundations of Christian Faith (New York: Crossroad Publishing Co., 1994).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 214 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 214</span>
+              <span class="course-title">Church History: Reformation Period</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The causes of the Protestant Reformation and the main Reformers: Luther, Calvin, and Zwingli. Their theological positions and their challenges to the Church. The Church's response: the Catholic Reformation and the Council of Trent. The Counter-Reformation and the activity of the Jesuits and other Counter-Reformation figures.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Latourette K.S., A History of Christianity (New York: Harper and Row Publishers, 1953).</li>
+                  <li>Neill T.P. and Schmandt R.H., eds. History of the Catholic Church (Milwaukee: Bruce, 1957).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 224 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 224</span>
+              <span class="course-title">Pastoral Theology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The pastoral office and the pastoral role in the world. The sacramental function of the priest. The ministerial function of the priest. Pastoral care: spiritual direction, confession and counseling. Principles and practice of pastoral education. The sacrament of penance and reconciliation. The sacrament of the sick and anointing of the sick.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Flannery A., ed. Vatican Council II: Conciliar and Post-Conciliar Documents (New York: Costello Publishing Company, 1988).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 200 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 200</span>
+              <span class="course-title">Christology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The historical Jesus in the New Testament and the Christ of faith. The incarnation as the central mystery of Christianity. The nature and purpose of the incarnation. Hypostatic union. The problem of Christ's knowledge and will. Kenosis and communicatio idiomatum. The resurrection of Christ and its theological implications. Christ as the fulfillment of Old Testament prophecy.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Brown R.E., The Birth of the Messiah (New York: Doubleday, 1993).</li>
+                  <li>Grillmeier A., Christ in Christian Tradition Vol. I (Oxford: Oxford University Press, 1989).</li>
+                  <li>Rahner K., Foundations of Christian Faith (New York: Crossroad Publishing Co., 1994).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 201 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 201</span>
+              <span class="course-title">Pneumatology and Mariology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p><strong>Pneumatology:</strong> The role of the Holy Spirit in Christian theology. The Holy Spirit in the Old Testament, Gospels and Epistles. The Holy Spirit and the Church. The gifts of the Holy Spirit. Sanctification and Charisma. <strong>Mariology:</strong> The place of Mary in Christian theology. The Marian doctrines: Incarnation, Virgin birth, Perpetual virginity, Immaculate Conception, Assumption. Mary as Mother of God, Queen of Heaven and Intercessor.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Boff L., The Maternal Face of God (San Francisco: Harper and Row, 1987).</li>
+                  <li>Flannery A., ed. Vatican Council II: Conciliar and Post-Conciliar Documents (New York: Costello Publishing Company, 1988).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 211 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 211</span>
+              <span class="course-title">Introduction to Moral Theology</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Overview of Moral Theology. The natural law and its application to ethics. The Ten Commandments as the foundation of Christian morality. The Sermon on the Mount and the Beatitudes. Virtue ethics: virtues and vices. The development of conscience and moral decision-making. Human dignity and the value of the human person.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Haring B., The Law of Christ Vol. I (Cork: The Mercier Press, 1963).</li>
+                  <li>John Paul II, Encyclical Letter Veritatis Splendor (Rome, 1993).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- GSS 002 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 002</span>
+              <span class="course-title">The Study of History</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Historical method and analysis. Sources and evidence in history. Chronology and periodization. Causation and change in history. Interpretation and historiography. The role of the historian. History and theology.</p>
+            </div>
+
+            <!-- GSS 003 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 003</span>
+              <span class="course-title">Academic Writing</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Introduction to scholarly writing. Thesis development. Organization and structure of academic essays. Research methods and source documentation. Critical reading and analysis. Proper citation methods (including footnotes and bibliography). Editing and proofreading.</p>
+            </div>
+
+            <!-- GSS 005 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 005</span>
+              <span class="course-title">African Socio-Cultural Studies</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Overview of African society and cultures. African anthropology and ethnography. Traditional structures and values. The impact of colonialism. Post-colonial development. African theology and inculturation. The role of the Church in African society.</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Elective Courses - Within Major Subject Area (2-3 Credits)</h3>
+            
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 215</span>
+              <span class="course-title">Old Testament Prophecy</span>
+              <span class="course-credits">3 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The nature and function of Old Testament prophecy. The origins of Hebrew prophecy. The major and minor prophets. Prophecy and history. The Messianic prophecies. Prophecy and fulfillment in Christian theology.</p>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 221</span>
+              <span class="course-title">Non-Canonical Writings (Apocrypha)</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The inter-testamental period. The Dead Sea Scrolls and other contemporary writings. The Apocrypha and Pseudepigrapha. Their historical and theological significance. Their relationship to canonical scriptures.</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Elective Courses - Outside Major Subject Area (2 Credits)</h3>
+            
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 222</span>
+              <span class="course-title">The Eastern Churches</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The Eastern Orthodox Church: history, theology, worship and practice. The relationship between Eastern and Western Christianity. The schism of 1054. Contemporary Eastern Christianity and ecumenical dialogue. The Eastern Catholic churches.</p>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 223</span>
+              <span class="course-title">Buddhism and Other Eastern Religions</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The life of Buddha and the origins of Buddhism. Buddhist doctrines: Four Noble Truths, Eight-fold Path, Karma and Rebirth. Theravada and Mahayana Buddhism. Buddhism in Asia and the West. Other Eastern religions: Taoism, Shintoism, Confucianism. Dialogue with Eastern religions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- YEAR III -->
+        <div class="year-section" data-aos="fade-up">
+          <div class="year-header"><i class="bi bi-3-circle-fill"></i> YEAR III COURSES</div>
+
+          <div class="section-card">
+            <h3>Compulsory Courses (34 Credits)</h3>
+            
+            <!-- REL 311 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 311</span>
+              <span class="course-title">The Pentateuch</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Literary, historical and theological study of the first five books of the Old Testament. Documentary hypothesis and alternate theories of authorship. The Pentateuchal traditions: Yahwist, Elohist, Priestly, Deuteronomic. The theology of the Pentateuch: God's covenant with Abraham, the Law at Sinai, and preparation for entry into Canaan.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Noth M., A History of Pentateuchal Traditions (Englewood Cliffs: Prentice Hall, 1981).</li>
+                  <li>Von Rad G., The Problem of the Hexateuch and Other Essays (London: McGill-Queens University Press, 1966).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 312 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 312</span>
+              <span class="course-title">The Literature & Theology of St. John</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Detailed study of the Fourth Gospel, the three Epistles of John, and the Apocalypse. The Johannine Theology: Incarnation, Life, Light, Truth, Love, the role of Jesus as the Word (Logos), dualism of light and darkness, eschatology and the life eternal. The historical background and the early Christian community behind the Johannine literature.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Brown R.E., The Gospel According to John (New York: Doubleday, 1966).</li>
+                  <li>Carson D.A., The Gospel According to John (Grand Rapids: Wm. B. Eerdmans, 1991).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 313 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 313</span>
+              <span class="course-title">Sacraments I: Baptism & Eucharist</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The nature and purpose of the sacraments. Baptism: the biblical foundation, grace and justification, ritual development and theology. The Eucharist: institution narrative and meaning, transubstantiation versus other interpretations, sacrifice and memorial, communion and unity in the Church, liturgical theology.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Rahner K., The Church and the Sacraments (New York: Herder and Herder, 1963).</li>
+                  <li>Schmemann A., The World as Sacrament (London: Darton, Longman & Todd, 1966).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 314 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 314</span>
+              <span class="course-title">Ethics of Human Life and Sexuality</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Ethical issues in biomedics: beginning of life (conception, contraception, abortion, artificial reproduction), end of life (euthanasia, suicide, capital punishment). Human sexuality: the Catholic teaching on sexuality, marriage and procreation. Homosexuality. Sexual abuse and its pastoral implications.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>John Paul II, Encyclical Letter Evangelium Vitae (Rome, 1995).</li>
+                  <li>Catholic Bishops' Conference, Pastoral Letter on Sexuality (Washington: USCCB, 1991).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 315 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 315</span>
+              <span class="course-title">Family Morality and Marriage Theology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The sacrament of matrimony: biblical foundations, consent and indissolubility, impediments to marriage, mixed marriages and ecumenical issues. The purposes of marriage: procreation and conjugal love. Family life: roles, duties, responsibilities. Divorce and remarriage. Pastoral ministry to families. Celibacy and religious life.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>John Paul II, The Theology of the Body: Human Love in the Divine Plan (Boston: Pauline Books, 1997).</li>
+                  <li>USCCB, Follow the Way of Love: A Pastoral Message to Families (Washington: USCCB, 1994).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 316 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 316</span>
+              <span class="course-title">Trinity and Trinitarian Theology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The doctrine of the Trinity: biblical foundations, development through the Councils (Nicaea, Constantinople, Chalcedon), Western and Eastern approaches. The persons of the Trinity: the Father as source, the Son's generation and incarnation, the Spirit's procession and sanctification. Trinitarian theology and Christian living.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Grillmeier A., Christ in Christian Tradition Vol. I (Oxford: Oxford University Press, 1989).</li>
+                  <li>Torrance T.F., The Christian Doctrine of God (Edinburgh: T&T Clark, 1996).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- REL 318 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 318</span>
+              <span class="course-title">Modern, Recent, Contemporary Church History</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Church history from the Enlightenment to Vatican II and beyond. The challenges of modernism, industrialization, scientific advancement. The social teaching of the Church. Vatican Council II and its implementation. Church and state relations. Ecumenism and inter-religious dialogue. The role of the Church in contemporary society.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Chadwick O., A History of Christianity (Oxford: Oxford University Press, 1995).</li>
+                  <li>Flannery A., ed. Vatican Council II: Conciliar and Post-Conciliar Documents (New York: Costello Publishing Company, 1988).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 301 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 301</span>
+              <span class="course-title">Canon Law: Church & Sacraments</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Canon law concerning the sacraments: validity and liceity, rites and ceremonies, minister and subject, effects of the sacraments. Canons on matrimony. Ordination and sacred orders. Clerical celibacy. Privileges and dispensations.</p>
+            </div>
+
+            <!-- SEM 312 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 312</span>
+              <span class="course-title">African Christian Theology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The history of Christianity in Africa. African religious traditions and their relationship to Christianity. Inculturation of the Gospel in Africa. African theology and its major theologians. African Christology, ecclesiology, and pneumatology. Religious syncretism. The role of lay apostolate in Africa.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Kwesi Dickson, Theology in Africa (Maryknoll: Orbis Books, 1984).</li>
+                  <li>Bujo Benezet, African Theology in its Social Context (Maryknoll: Orbis Books, 1992).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 315 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 315</span>
+              <span class="course-title">Christology and Soteriology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Advanced treatment of Christ: his nature and person, divinity and humanity, virgin birth, resurrection. Redemption theories: ransom, satisfaction (Anselm), substitution. Reconciliation and atonement. Christ as mediator and intercessor. The universal salvific will of God. Christ and world religions.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Boff Leonardo, Jesus Christ Liberator (Maryknoll: Orbis Books, 1978).</li>
+                  <li>Kasper Walter, The God of Jesus Christ (New York: Crossroad, 1984).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SEM 310 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 310</span>
+              <span class="course-title">Pastoral Theology and Priestly Ministry</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The nature of pastoral theology. The priest as shepherd, servant, minister. Pastoral leadership and management. Ministry to the sick, suffering, and dying. Spiritual direction. The priest's personal sanctification. Celibacy and communal living.</p>
+            </div>
+
+            <!-- GSS 006 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 006</span>
+              <span class="course-title">Research Methodology and Academic Theses</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Research methods in theology and philosophy. Thesis development and structure. Primary and secondary sources. Literature review. Argumentation and critical analysis. Proper documentation and citation. Evaluation of research quality and validity.</p>
+            </div>
+
+            <!-- GSS 007 -->
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">GSS 007</span>
+              <span class="course-title">Homiletics (Preaching)</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Principles of effective preaching. Sermon structure and preparation. Exegesis and homiletic application. Liturgical preaching. Preaching to diverse audiences. Use of examples, stories, and illustrations. Delivery and voice. Practice and feedback.</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Elective Courses - Within Major Subject Area (2-3 Credits)</h3>
+            
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 321</span>
+              <span class="course-title">Introduction to Biblical Hebrew</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Introduction to Biblical Hebrew alphabet, vowel systems, nouns, pronouns, verbs. Basic grammar and syntax. Reading and translation of selected Old Testament passages. Understanding Hebrew thought patterns.</p>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 322</span>
+              <span class="course-title">The Church and Inculturation</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Inculturation and adaptation of the Gospel message. Evangelization and cultural transformation. The relationship between faith and culture. Liturgical adaptation and translation. Pastoral approaches to inculturation. Case studies from mission territories.</p>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 323</span>
+              <span class="course-title">Christian Eschatology and End Times</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Biblical eschatology: Old Testament hope, New Testament fulfillment theology. Heaven, hell, purgatory, and resurrection. The General Judgment and Last Judgment. Millennialism and its variations. The Second Coming of Christ. Mystical eschatology.</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Elective Courses - Outside Major Subject Area (2-3 Credits)</h3>
+            
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 317</span>
+              <span class="course-title">Psychology and Pastoral Counselling</span>
+              <span class="course-credits">3 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Psychological foundations for pastoral work. Mental health and spiritual well-being. Counselling techniques and skills. Active listening and empathy. Crisis intervention. Addiction and recovery. Psychology of grief and mourning.</p>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 319</span>
+              <span class="course-title">Political & Cultural Systems in Africa</span>
+              <span class="course-credits">2 Credits</span>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>African political structures and governance. Traditional leadership and governance systems. Colonial impact and post-colonial development. African cultural values and their implications for pastoral ministry. The role of the Church in promoting justice and peace.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- YEAR IV -->
+        <div class="year-section" data-aos="fade-up">
+          <div class="year-header"><i class="bi bi-4-circle-fill"></i> YEAR IV COURSES (Capstone Year)</div>
+
+          <div class="section-card">
+            <h3>Compulsory Courses (42 Credits)</h3>
+            
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 411</span>
+              <span class="course-title">Wisdom Literature</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Advanced study of the Wisdom Books: Job, Psalms, Proverbs, Ecclesiastes, Song of Songs, Wisdom, and Sirach. Literary forms and genres. Theological themes: suffering and divine justice, prayer and worship, moral instruction, love and marriage, creation and wisdom. Wisdom theology in the context of ancient Near Eastern literature.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Crenshaw J.L., Old Testament Wisdom: An Introduction (Louisville: Westminster John Knox Press, 1998).</li>
+                  <li>Murphy R.E., The Tree of Life: An Exploration of Biblical Wisdom Literature (Grand Rapids: Eerdmans, 1996).</li>
+                  <li>Whybray R.N., The Book of Proverbs (Cambridge: Cambridge University Press, 1972).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 412</span>
+              <span class="course-title">Apocalyptic Literature</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The nature and origins of apocalyptic literature. Study of Daniel, Ezekiel 38-39, Zechariah 9-14, and Revelation. Apocalyptic symbolism and imagery. Eschatological themes: end times, judgment, resurrection, messianic hope. The Dead Sea Scrolls and intertestamental apocalyptic writings. Christian apocalyptic tradition.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Collins J.J., The Apocalyptic Imagination: An Introduction to Jewish Apocalyptic Literature (Grand Rapids: Eerdmans, 1998).</li>
+                  <li>Hanson P.D., The Dawn of Apocalyptic (Philadelphia: Fortress Press, 1979).</li>
+                  <li>Russell D.S., The Method and Message of Jewish Apocalyptic (London: SCM Press, 1964).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 413</span>
+              <span class="course-title">Selected Ethical Problems in an African Context</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Application of Christian ethics to African contexts. Polygamy and Christian marriage. Traditional African customs and Christian morality. Economic justice and development. Corruption and governance. HIV/AIDS and sexual ethics. Environmental stewardship. War, peace, and reconciliation in African conflicts.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Verstraelen F.J., African Christian Ethics (Kampen: Kok, 1998).</li>
+                  <li>Gichure C., "Christian Ethics in Africa" in Journal of Theology for Southern Africa (1995).</li>
+                  <li>Tutu D., No Future Without Forgiveness (New York: Doubleday, 1999).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 414</span>
+              <span class="course-title">The Church's Healing Ministry</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Biblical foundations of healing ministry. Jesus as healer and the early Church's healing ministry. Sacraments of healing: Anointing of the Sick, Reconciliation. Spiritual and physical healing. The role of prayer, laying on of hands, and community. Medical ethics and pastoral care. Mental health and spiritual well-being.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>MacNutt F., Healing (Notre Dame: Ave Maria Press, 1999).</li>
+                  <li>Santry A., Faith and Healing (London: Darton, Longman & Todd, 1972).</li>
+                  <li>Pope John Paul II, Salvifici Doloris (On the Christian Meaning of Human Suffering, 1984).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 415</span>
+              <span class="course-title">Eucharist and Ministry</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The Eucharist as source and summit of Christian life. Biblical foundations and historical development. The theology of the Mass. The ministerial priesthood and the common priesthood of the faithful. Diaconal ministry and lay participation. The relationship between Eucharist and mission. Liturgical renewal and inculturation.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Power D.N., The Eucharistic Mystery: Revitalizing the Tradition (New York: Crossroad, 1992).</li>
+                  <li>Schillebeeckx E., The Eucharist (New York: Sheed and Ward, 1968).</li>
+                  <li>Pope John Paul II, Ecclesia de Eucharistia (2003).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 416</span>
+              <span class="course-title">Theology of Christian Marriage</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Biblical foundations of marriage. Marriage as sacrament and covenant. Theology of love, sexuality, and procreation. Marriage preparation and pastoral care. Divorce, remarriage, and annulment. Natural family planning. Marriage enrichment and counseling. The family as domestic church.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>John Paul II, Familiaris Consortio (The Role of the Christian Family in the Modern World, 1981).</li>
+                  <li>John Paul II, Theology of the Body (Boston: Pauline Books, 1997).</li>
+                  <li>Grabowski J.S., Sex and Virtue: An Introduction to Sexual Ethics (Washington DC: Catholic University of America Press, 2003).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 417</span>
+              <span class="course-title">Christianity and Other Religions</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Theological foundations for interreligious dialogue. The uniqueness of Christ and universal salvation. Comparative study of Christianity with Islam, Judaism, Hinduism, Buddhism, and African Traditional Religion. The Church's approach to other religions. Mission and evangelization. Religious pluralism and relativism.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Kraemer H., The Christian Message in a Non-Christian World (Grand Rapids: Eerdmans, 1963).</li>
+                  <li>Knitter P.F., No Other Name? A Critical Survey of Christian Attitudes Toward the World Religions (Maryknoll: Orbis Books, 1985).</li>
+                  <li>Pope John Paul II, Redemptoris Missio (On the Permanent Validity of the Church's Missionary Mandate, 1990).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">REL 418</span>
+              <span class="course-title">Long Essay</span>
+              <span class="course-credits">6 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Independent research project on a theological topic chosen by the student with faculty supervision. Development of research question, literature review, methodology, and argumentation. Approximately 50 typed pages. Topics may include biblical studies, systematic theology, moral theology, church history, or pastoral theology. Defense of thesis before faculty committee.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Turabian K.L., A Manual for Writers of Research Papers, Theses, and Dissertations (Chicago: University of Chicago Press, 2013).</li>
+                  <li>Barzun J. & Graff H.F., The Modern Researcher (Belmont: Wadsworth, 1992).</li>
+                  <li>Booth W.C. et al., The Craft of Research (Chicago: University of Chicago Press, 2008).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 316</span>
+              <span class="course-title">The Letter to the Hebrews & Catholic Epistles</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The authorship, date, and purpose of Hebrews. Christology and priesthood theology. Faith and perseverance themes. Study of James, 1-2 Peter, 1-3 John, and Jude. Pastoral concerns and early Christian challenges. Eschatological hope and moral exhortation. Relationship to Pauline theology.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Attridge H.W., Hebrews: A Commentary on the Epistle to the Hebrews (Minneapolis: Fortress Press, 1989).</li>
+                  <li>Johnson L.T., The Letter of James (New York: Doubleday, 1995).</li>
+                  <li>Perkins P., First and Second Peter, James, and Jude (Louisville: Westminster John Knox Press, 1995).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 401</span>
+              <span class="course-title">Canon Law (Church & Marriage) [2 semesters]</span>
+              <span class="course-credits">4 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Advanced canon law studies. Marriage law: essential properties, consent, impediments, diriment and impedient. Matrimonial processes: declaration of nullity, dissolution. Clerical marriage and celibacy. Church governance and administration. Rights and obligations of clergy and laity. Penal law and sanctions.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Code of Canon Law (Latin-English Edition, 1983).</li>
+                  <li>Coriden J.A. et al., The Code of Canon Law: A Text and Commentary (New York: Paulist Press, 1985).</li>
+                  <li>Huels J.M., The Pastoral Companion: A Canon Law Handbook for Catholic Ministry (Quincy: Franciscan Press, 1995).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 406</span>
+              <span class="course-title">Missiology</span>
+              <span class="course-credits">3 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>The theology of mission. Biblical foundations and historical development. The Church's missionary mandate. Evangelization and inculturation. Dialogue with other religions and cultures. Mission in Africa: challenges and opportunities. The role of lay people in mission. Contemporary mission strategies and methods.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Bosch D.J., Transforming Mission: Paradigm Shifts in Theology of Mission (Maryknoll: Orbis Books, 1991).</li>
+                  <li>Shorter A., Toward a Theology of Inculturation (Maryknoll: Orbis Books, 1988).</li>
+                  <li>Pope John Paul II, Redemptoris Missio (1990).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 410</span>
+              <span class="course-title">The Johannine Writings</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Advanced study of John's Gospel, Epistles, and Revelation. Johannine theology: light/darkness, life/death, love/hate. The Word made flesh. The Paraclete and pneumatology. Eschatology and realized eschatology. The Beloved Disciple and Johannine community. Literary and theological unity of the Johannine corpus.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Brown R.E., The Gospel According to John (New York: Doubleday, 1966).</li>
+                  <li>Schnackenburg R., The Gospel According to St. John (New York: Crossroad, 1982).</li>
+                  <li>Smith D.M., John (Nashville: Abingdon Press, 1999).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 411</span>
+              <span class="course-title">Seminar: Parish Administration</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Practical skills for parish administration. Financial management and budgeting. Personnel management and volunteer coordination. Facilities maintenance and development. Record keeping and sacramental registers. Pastoral planning and program development. Canon law requirements for parish administration.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Huels J.M., Parish Finance: Best Practices and Canon Law (Washington DC: CLSA, 2004).</li>
+                  <li>Morrisey F.G., "Parish Administration" in New Commentary on the Code of Canon Law (New York: Paulist Press, 2000).</li>
+                  <li>USCCB, Co-Workers in the Vineyard of the Lord (2005).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course-card clickable" onclick="toggleCourse(this)">
+              <span class="course-code">SEM 412</span>
+              <span class="course-title">Practical: Liturgy/RCIA</span>
+              <span class="course-credits">2 Credits</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="course-description">
+              <h4>Course Content</h4>
+              <p>Practical training in liturgical ministry. Rite of Christian Initiation for Adults (RCIA) process and implementation. Liturgical planning and preparation. Music and liturgical arts. Catechetical instruction for RCIA candidates. Mystagogy and post-baptismal formation. Special liturgical celebrations and seasons.</p>
+              <div class="bibliography">
+                <strong>Bibliography</strong>
+                <ul>
+                  <li>Rite of Christian Initiation for Adults (USCCB, 1988).</li>
+                  <li>General Instruction of the Roman Missal (USCCB, 2011).</li>
+                  <li>USCCB, Introduction to the Order of Mass (2015).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight-box mt-4">
+            <h3><i class="bi bi-file-earmark-check"></i> Capstone Requirements</h3>
+            <p><strong>Long Essay (REL 418 - 6 Credits):</strong> A compulsory long essay of approximately fifty typed pages in any area of theology, spirituality, liturgy or general religious studies. Topics are determined by students and supervisors assigned by the end of the third year. Finished work is submitted to the Dean of Studies towards the end of the fourth year.</p>
+            <p class="mb-0"><strong>Status:</strong> The research project is a compulsory requirement for the B.ST degree and completion of the seminary course.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GRADING TAB -->
+      <div class="tab-pane fade" id="grading" role="tabpanel" aria-labelledby="grading-tab">
+        
+        <div class="section-card" data-aos="fade-up">
+          <h2><i class="bi bi-percent"></i> Grading System</h2>
+          
+          <p>The grading system for exams follows guidelines approved by the Nigerian Universities Commission and is operative in Nigerian universities and colleges.</p>
+
+          <h3 class="mt-4">Grading Scale</h3>
+          
+          <div class="table-responsive">
+            <table class="table grading-table">
+              <thead>
+                <tr>
+                  <th>Percentage Scores</th>
+                  <th>Letter Grade</th>
+                  <th>Grade Points (GP)</th>
+                  <th>Grade Points Average (GPA)</th>
+                  <th>Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background-color: #e8f5e9;">
+                  <td>70-100</td>
+                  <td><strong>A</strong></td>
+                  <td>5</td>
+                  <td>4.50-5.00</td>
+                  <td><strong>First Class</strong></td>
+                </tr>
+                <tr>
+                  <td>60-69</td>
+                  <td><strong>B</strong></td>
+                  <td>4</td>
+                  <td>3.50-4.49</td>
+                  <td>2nd Class Upper</td>
+                </tr>
+                <tr>
+                  <td>50-59</td>
+                  <td><strong>C</strong></td>
+                  <td>3</td>
+                  <td>2.40-3.49</td>
+                  <td>2nd Class Lower</td>
+                </tr>
+                <tr>
+                  <td>45-49</td>
+                  <td><strong>D</strong></td>
+                  <td>2</td>
+                  <td>1.50-2.49</td>
+                  <td>3rd Class</td>
+                </tr>
+                <tr>
+                  <td>40-44</td>
+                  <td><strong>E</strong></td>
+                  <td>1</td>
+                  <td>1.00-1.49</td>
+                  <td>Pass</td>
+                </tr>
+                <tr style="background-color: #ffebee;">
+                  <td>0-39</td>
+                  <td><strong>F</strong></td>
+                  <td>0</td>
+                  <td>0.99</td>
+                  <td><strong>Fail</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="mt-5">Conversion Between Nigerian and Urbaniana Grades</h3>
+
+          <p class="mb-3">When results are submitted to Pontificia Universitas Urbaniana in Rome, grades are converted according to the following scale:</p>
+
+          <div class="table-responsive">
+            <table class="table grading-table">
+              <thead>
+                <tr>
+                  <th>Nigerian Grades</th>
+                  <th>Mark</th>
+                  <th>Grade</th>
+                  <th class="text-center">→</th>
+                  <th>Urbaniana Mark</th>
+                  <th>Urbaniana Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1st Class Hons</td>
+                  <td>70+</td>
+                  <td>A</td>
+                  <td class="text-center">→</td>
+                  <td>96.70+</td>
+                  <td><strong>Summa cum laude</strong></td>
+                </tr>
+                <tr>
+                  <td>2nd Class Hons Upper</td>
+                  <td>60+</td>
+                  <td>B1</td>
+                  <td class="text-center">→</td>
+                  <td>90.00+</td>
+                  <td><strong>Magna cum laude</strong></td>
+                </tr>
+                <tr>
+                  <td>2nd Class Hons Lower</td>
+                  <td>50+</td>
+                  <td>B2</td>
+                  <td class="text-center">→</td>
+                  <td>80.00+</td>
+                  <td><strong>Cum laude Probatus</strong></td>
+                </tr>
+                <tr>
+                  <td>3rd Class Hons</td>
+                  <td>45+</td>
+                  <td>C</td>
+                  <td class="text-center">→</td>
+                  <td>70.00+</td>
+                  <td><strong>Bene Probatus</strong></td>
+                </tr>
+                <tr>
+                  <td>Pass</td>
+                  <td>40+</td>
+                  <td>D</td>
+                  <td class="text-center">→</td>
+                  <td>60.00+</td>
+                  <td><strong>Probatus</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="mt-5">Mark Conversion Table</h3>
+
+          <p>Complete conversion table from Nigerian to Rome grading:</p>
+
+          <div class="table-responsive">
+            <table class="table grading-table" style="font-size: 0.85rem;">
+              <thead>
+                <tr>
+                  <th colspan="2" class="text-center">Nigeria → Rome</th>
+                  <th colspan="2" class="text-center">Nigeria → Rome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>40</td>
+                  <td>60.00</td>
+                  <td>71</td>
+                  <td>96.81</td>
+                </tr>
+                <tr>
+                  <td>45</td>
+                  <td>70.00</td>
+                  <td>76</td>
+                  <td>97.36</td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>80.00</td>
+                  <td>81</td>
+                  <td>97.91</td>
+                </tr>
+                <tr>
+                  <td>55</td>
+                  <td>85.00</td>
+                  <td>86</td>
+                  <td>98.46</td>
+                </tr>
+                <tr>
+                  <td>60</td>
+                  <td>90.00</td>
+                  <td>91</td>
+                  <td>99.01</td>
+                </tr>
+                <tr>
+                  <td>65</td>
+                  <td>93.35</td>
+                  <td>96</td>
+                  <td>99.56</td>
+                </tr>
+                <tr>
+                  <td>70</td>
+                  <td>96.70</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- THEMES TAB -->
+      <div class="tab-pane fade" id="themes" role="tabpanel" aria-labelledby="themes-tab">
+        
+        <div class="section-card" data-aos="fade-up">
+          <h2><i class="bi bi-book-half"></i> Pontificia Universitas Urbaniana - Examination Themes</h2>
+          
+          <p>The following 30 principal theological topics must be covered by professors and are referenced in written and oral examinations for the Bachelor's Degree in Sacred Theology.</p>
+
+          <p class="text-muted">Each institute affiliated with the Pontifical Urban University has the possibility to add three (3) additional local topics reflecting pastoral and cultural realities, subject to university approval.</p>
+
+          <div class="mt-4">
+            <div class="theme-item">
+              <strong>1</strong> Revelation and inspiration of Sacred Scripture in the light of Dei Verbum (cc. I-III); formation of the Canon; interpretation of the text.
+            </div>
+
+            <div class="theme-item">
+              <strong>2</strong> Questions concerning the Pentateuch and new orientations of modern criticism; theology of Exodus. Historical books and their literary genre: composition and theology.
+            </div>
+
+            <div class="theme-item">
+              <strong>3</strong> The function and message of the Prophets. The books of Isaiah, Jeremiah and Ezekiel: composition and theology.
+            </div>
+
+            <div class="theme-item">
+              <strong>4</strong> The Wisdom Books and their literary genres; the Book of Psalms; Messianic and Christological "re-interpretations", liturgical and spiritual use.
+            </div>
+
+            <div class="theme-item">
+              <strong>5</strong> The apostolic origin and historical value of the Gospels according to "Sancta Mater Ecclesia" (1964) and "Dei Verbum" (1965). Contents, articulation and theology of the three Synoptic Gospels and the Acts of the Apostles. Presentation and commentary on selected texts.
+            </div>
+
+            <div class="theme-item">
+              <strong>6</strong> Content, articulation and theology of the five writings of St. John. Presentation and commentary on selected texts.
+            </div>
+
+            <div class="theme-item">
+              <strong>7</strong> Content, articulation and theology of the Letters to the Romans, Galatians, I & II Corinthians, Colossians and Ephesians. Circumstances of the writing of I & II Thessalonians, Philippians, Philemon and Pastoral Letters. Presentation and commentary on selected texts.
+            </div>
+
+            <div class="theme-item">
+              <strong>8</strong> Content and articulation of the Letter to the Hebrews and its theology of the Priesthood of Christ. Contents and circumstances of the writing of I & II Peter and James. Presentation and commentary on selected texts.
+            </div>
+
+            <div class="theme-item">
+              <strong>9</strong> Explanation on the basis of the New Testament how Jesus, with his words and actions established the Kingdom of God, revealed the Father and Himself, and through His death, Resurrection, Ascension and the mission of the Holy Spirit, fulfilled His work.
+            </div>
+
+            <div class="theme-item">
+              <strong>10</strong> Explain the images with which the Church of Christ is illustrated in Holy Scripture and in Tradition; show the nature and characteristic signs of the Church, taking also into consideration ecumenical perspectives.
+            </div>
+
+            <div class="theme-item">
+              <strong>11</strong> The royal, prophetic and priestly office of all the faithful and the ministerial priesthood (Sacrament of Holy Orders). The relationship between the collegiality of the bishops and the primacy and infallibility of the Roman Pontiff.
+            </div>
+
+            <div class="theme-item">
+              <strong>12</strong> The Church has received the mission to evangelise all peoples. Principles and orientations for dialogue with religions and cultures and for relationships with civil societies.
+            </div>
+
+            <div class="theme-item">
+              <strong>13</strong> Point out the importance of the Fathers of the Church in the study of theology and describe briefly the doctrinal contributions of the most important Fathers.
+            </div>
+
+            <div class="theme-item">
+              <strong>14</strong> Describe the outstanding events in the history of the Church and of the Missions.
+            </div>
+
+            <div class="theme-item">
+              <strong>15</strong> The nature, function and fundamental principles of Canon Law in the Church. Make reference to the most important contents of the various books of the Code.
+            </div>
+
+            <div class="theme-item">
+              <strong>16</strong> Explain briefly the truth of the One God: how it is possible for all human beings to know certainly this truth intuitively through the light of reason; how traces of one of its proofs can be found in the spiritual experience of different religions and peoples; and how finally this truth was arrived at from the complete revelation of the same living God in Salvation History.
+            </div>
+
+            <div class="theme-item">
+              <strong>17</strong> Explain briefly the dogma of the Holy Trinity: how it has already been symbolized in the economy of the Old Testament; how it has been fully revealed in the New Testament; which principal Councils defined its essential elements; which could be the most common and acceptable theological explanations.
+            </div>
+
+            <div class="theme-item">
+              <strong>18</strong> Explain the doctrine of the creation of all things by God, the nature and role of spiritual and material beings, of human beings and the doctrine of the constant Providence of God according to Revelation in Holy Scripture and in the Tradition of the Church.
+            </div>
+
+            <div class="theme-item">
+              <strong>19</strong> Explain the dogma of Original Sin; in conformity with the data of Sacred Scripture, of the definitions of the Magisterium and of the most common and acceptable theological explanations; illustrate the doctrine of free will and human responsibility.
+            </div>
+
+            <div class="theme-item">
+              <strong>20</strong> Explain the doctrine of the grace of God, with reference to the mystery of redemption and the gift of the Holy Spirit; add a summary sketch of the principal disputes concerning grace which have taken place in the course of Church history.
+            </div>
+
+            <div class="theme-item">
+              <strong>21</strong> Explain the event of the Incarnation, Death and Resurrection of Jesus Christ Son of God. Show the principle elements of the Christological mystery in the dogmatic formulations of the relevant Church councils.
+            </div>
+
+            <div class="theme-item">
+              <strong>22</strong> Explain the doctrine concerning the Virgin Mary as Mother of God and Mother of the Church, making reference to Council definitions and to the most recent documents of the Magisterium.
+            </div>
+
+            <div class="theme-item">
+              <strong>23</strong> Explain in synthesis the traditional doctrine of the Church regarding the coming of Christ in glory and the fundamental points of Eschatology regarding both the single person as well as the entire creation.
+            </div>
+
+            <div class="theme-item">
+              <strong>24</strong> Explain the nature and effects of the Sacraments in general, and in particular the Sacraments of Christian Initiation, and especially the Eucharist.
+            </div>
+
+            <div class="theme-item">
+              <strong>25</strong> Principles which illustrate the theological meaning and pastoral value of the Liturgy as the action of Christ praising God and sanctifying persons; and how the action of the Church, through tangible signs, announces and brings into being the Mystery of Christ.
+            </div>
+
+            <div class="theme-item">
+              <strong>26</strong> The moral qualification, which characterises every human act, finds its "origin" in the object, in the end and in the circumstances including the foreseeable consequences. Conditions of the imputability of the human act. Conscience and the principles for the judgement of conscience which make it the right norm for the action of the person. The formation of conscience.
+            </div>
+
+            <div class="theme-item">
+              <strong>27</strong> Virtue and sin (nature, kind and dimensions) in Christian life. The conversion of the sinner and the Sacrament of Reconciliation.
+            </div>
+
+            <div class="theme-item">
+              <strong>28</strong> Moral responsibility regarding human life and its integrity both as regards ones own life as well as the life of others. Particular reference to the moral problems connected to the beginning and the end of human life, with health care and medical interventions.
+            </div>
+
+            <div class="theme-item">
+              <strong>29</strong> Human sexuality, the virtue of chastity, the Sacrament of Marriage. The solution of moral problems regarding sexuality in general and conjugal life in particular, keeping in mind also some indications of Canon Law.
+            </div>
+
+            <div class="theme-item">
+              <strong>30</strong> Social Doctrine of the Church; the relationship between charity and justice, obligations to guarantee and favour peace.
+            </div>
+          </div>
+
+          <div class="highlight-box mt-5">
+            <h3>Additional Local Themes</h3>
+            <p>SAMS has the possibility to add up to <strong>three (3) additional themes</strong> of particular significance to the local and African context. These topics must be approved by Pontificia Universitas Urbaniana and should reflect the pastoral and cultural realities of Nigeria and West Africa.</p>
+            <p class="mb-0"><em>Contact the Theology Department for current approved local topics.</em></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Ancillary Courses Section -->
+  <section class="section-card container mt-5 mb-5" data-aos="fade-up">
+    <h2><i class="bi bi-star"></i> Ancillary & Workshop Courses</h2>
+    
+    <p>Students are given the opportunity to attend the following ancillary courses organized as workshops and seminars at least once before the end of their seminary training:</p>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Spiritual Theology
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Typewriting
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Word Processing
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> TV Production
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Leadership Skills
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Catechetical Skills
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Issues of Justice and Peace
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-check-circle text-success"></i> Further Areas of Communication
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- General Observations -->
+  <section class="section-card container mb-5" data-aos="fade-up">
+    <h2><i class="bi bi-info-circle"></i> General Observations</h2>
+    
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <strong><i class="bi bi-check-circle text-success"></i> Dual Programme Operation:</strong> 
+        Since the Seminary operates both the University of Jos and the Pontificia Universitas Urbaniana programmes concomitantly, courses coded REL, GSS and SEM are applicable to both programmes.
+      </li>
+      <li class="mb-3">
+        <strong><i class="bi bi-check-circle text-success"></i> Degree Selection:</strong> 
+        Students are requested to choose either of both degrees at the beginning of their studies.
+      </li>
+      <li class="mb-3">
+        <strong><i class="bi bi-check-circle text-success"></i> Grade Conversion:</strong> 
+        Scores and grades are computed according to the degree chosen by the student. For homogeneity, the seminary employs the University of Jos scoring system in all examinations. Scores and grades sent to Rome are converted into the Roman grading scheme.
+      </li>
+      <li class="mb-3">
+        <strong><i class="bi bi-check-circle text-success"></i> Transcript Requirements:</strong> 
+        To obtain the transcript of results and certificates, students must fulfil all academic requirements as enunciated above.
+      </li>
+      <li class="mb-0">
+        <strong><i class="bi bi-check-circle text-success"></i> Academic Council Authority:</strong> 
+        The Academic Council reserves the right to withdraw any candidate from either of the degree programmes if his performance is not satisfactory.
+      </li>
+    </ul>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="highlight-box container mb-5" data-aos="fade-up">
+    <h3 class="text-center">Ready to Begin Your Theological Journey?</h3>
+    <p class="text-center">For more information about admission, course details, or to schedule a campus visit, contact our admissions office.</p>
+    <div class="text-center">
+      <a href="admission.html" class="btn btn-primary btn-lg me-2">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>St Augustine's Major Seminary</h5>
+          <p>Forming faithful priests and Christian leaders through spiritual, academic, and pastoral excellence.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+            <li><a href="admission.html" class="text-decoration-none text-light">Admission</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-light">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>Email: info@samsjos.edu.ng<br>Phone: 090800000001<br>Jos, Nigeria</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2026 St Augustine's Major Seminary Jos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init();
+
+    // Hide loading overlay
+    window.addEventListener('load', () => {
+      document.getElementById('loading-overlay').style.display = 'none';
+    });
+
+    // Tab switching
+    const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
+    tabButtons.forEach(button => {
+      button.addEventListener('shown.bs.tab', function() {
+        AOS.refresh();
+      });
+    });
+
+    // Course description toggle
+    function toggleCourse(courseCard) {
+      const description = courseCard.nextElementSibling;
+      if (description && description.classList.contains('course-description')) {
+        description.classList.toggle('show');
+        courseCard.classList.toggle('active');
+      }
+    }
+  </script>
+</body>
+</html>
