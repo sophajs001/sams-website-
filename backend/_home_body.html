@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | St Augustine&#039;s Major Seminary Jos</title>
+  <meta name="description" content="Welcome to St Augustine&#039;s Major Seminary, Jos.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Home | St Augustine&#039;s Major Seminary Jos">
+  <meta property="og:description" content="Welcome to St Augustine&#039;s Major Seminary, Jos.">
+  <meta property="og:image" content="http://127.0.0.1:8000/site/images/sams logo.jpeg">
+  <meta property="og:type" content="website">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/site/style.css">
+  </head>
+<body>
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="header-top">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="follow-us">
+            <span>Follow Us:</span>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 text-end">
+          <div class="contact-info">
+            <span><i class="bi bi-geo-alt"></i> Jos, Nigeria</span>
+            <span><i class="bi bi-envelope"></i> info@samsjos.edu.ng; Tel: 090800000001 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="http://127.0.0.1:8000">
+        <img src="http://127.0.0.1:8000/site/images/sams logo.jpeg" alt="Logo" class="me-2 rounded-circle" height="40" width="40" loading="lazy">
+        <span class="fw-bold fs-6 d-none d-md-inline">St Augustine's Major Seminary</span>
+        <span class="fw-bold fs-6 d-inline d-md-none">SAMS</span>
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span><span class="toggler-bar"></span><span class="toggler-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/history"><i class="bi bi-arrow-right-short"></i> History</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/administration"><i class="bi bi-arrow-right-short"></i> Administration</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/vocation-formation"><i class="bi bi-arrow-right-short"></i> Vocation & Formation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#academics" role="button" data-bs-toggle="dropdown">Academics</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/admission"><i class="bi bi-arrow-right-short"></i> Admission</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/philosophy-department"><i class="bi bi-arrow-right-short"></i> Philosophy Department</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/theology"><i class="bi bi-arrow-right-short"></i> Theology Department</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#resources" role="button" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/library"><i class="bi bi-arrow-right-short"></i> Library</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/farm"><i class="bi bi-arrow-right-short"></i> Farm</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/publications"><i class="bi bi-arrow-right-short"></i> Publications</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#info" role="button" data-bs-toggle="dropdown">Info</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/contact"><i class="bi bi-arrow-right-short"></i> Contact & Support</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/blog"><i class="bi bi-arrow-right-short"></i> News & Events</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/blog-detail"><i class="bi bi-arrow-right-short"></i> Event Details</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/gallery"><i class="bi bi-arrow-right-short"></i> Gallery</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/external-links"><i class="bi bi-arrow-right-short"></i> External Links</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/page/alumni">Alumni</a></li>
+          <li class="nav-item"><a class="reflection-btn" href="http://127.0.0.1:8000/page/reflection">📖 Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      
+    <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+
+    
+<!-- Slide 1 (SAMS First Hero) -->
+<div class="carousel-item active">
+  <div class="sams-first">
+    <img class="sams-first-img" src="/site/images/sams image 10.jpg"
+         srcset="images/seminary test.webp 1x, images/seminary test@2x.webp 2x"
+         alt="Seminary campus" loading="lazy">
+    <div class="sams-first-content text-start">
+      <h1>Forming Future Priests & Christian Leaders</h1>
+      <p>
+        Rooted in prayer, discipline, and academic excellence.<br>
+        Discover our rich history and tradition of priestly formation.
+      </p>
+      <a href="/page/history" class="sams-first-btn">Explore the Seminary</a>
+    </div>
+  </div>
+</div>
+<!-- Slide 2 -->
+<div class="carousel-item">
+  <div class="sams-second">
+    <img class="sams-second-img" src="/site/images/church image 2.webp"
+         srcset="images/church image 2.webp 1x, images/church image 2@2x.webp 2x"
+         alt="Church interior" loading="lazy">
+    <div class="sams-second-content text-start">
+      <h1>Academic Excellence & Spiritual Growth</h1>
+      <p>
+        Combining faith and learning to nurture well‑rounded leaders.<br>
+        Choose your path in Philosophy or Theology for priestly formation.
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="/page/philosophy-department" class="sams-second-btn">Philosophy</a>
+        <a href="/page/theology" class="sams-second-btn">Theology</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="carousel-item">
+  <div class="sams-third">
+    <img class="sams-third-img" src="/site/images/sams image 8.jpg"
+         srcset="images/common picture.png 1x, images/common picture@2x.png 2x"
+         alt="Community and service" loading="lazy">
+    <div class="sams-third-content text-start">
+      <h1>Community & Service</h1>
+      <p>
+        Preparing students to serve God and humanity with love.<br>
+        Join us in supporting our mission and pastoral outreach.
+      </p>
+      <a href="/page/contact" class="sams-third-btn">Support Our Mission</a>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4 -->
+<div class="carousel-item">
+  <div class="sams-fourth">
+    <img class="sams-fourth-img" src="/site/images/sams image.jpg"
+         srcset="images/church image.webp 1x, images/church image@2x.webp 2x"
+         alt="Faith and prayer" loading="lazy">
+    <div class="sams-fourth-content text-start">
+      <h1>Faith, Prayer, & Discipline</h1>
+      <p>
+        Building spiritual strength for a lifetime of service.<br>
+        Reflect daily with our seminary community’s insights.
+      </p>
+      <a href="/page/reflection" class="sams-fourth-btn">Read Reflections</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+
+  
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</section>
+
+<!-- Indicators -->
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+</div>
+
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<!-- ================= MODERN HERO SECTION ================= -->
+<section class="sams-hero-wrap" data-aos="fade-in">
+  <div class="container"> <!-- use .container for consistent centered width -->
+    <div class="row align-items-center sams-hero-inner">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-md-6 sams-hero-text" data-aos="slide-right">
+        <h1 class="sams-welcome-title">Welcome to St. Augustine's Major Seminary Jos</h1>
+        <h4 class="sams-welcome-slogan">Raising Faithful & Disciplined Leaders</h4>
+
+        <div class="sams-accent-line"></div>
+
+        <p class="sams-hero-desc">
+          St Augustine’s Major Seminary, Jos, is a center of spiritual, academic, and pastoral formation dedicated to nurturing men called to serve God and His people. For decades, the seminary has been committed to providing holistic formation integrating prayer, community life, and rigorous academic study.
+          <br><br>
+          Our mission is to form well-rounded priests who are spiritually mature, intellectually equipped, and pastorally competent. At SAMS, seminarians are guided through a structured program of theological education, pastoral training, and personal spiritual development.
+        </p>
+
+        <a href="#" class="sams-hero-btn" data-aos="zoom-in" data-aos-delay="300">Read More</a>
+      </div>
+
+      <!-- RIGHT FLOATING OVERLAPPING IMAGES -->
+      <div class="col-md-6 sams-hero-images" data-aos="slide-left" data-aos-delay="200">
+        <img src="/site/images/sams image 6.webp" class="sams-img-top" alt="Seminary Image Top" loading="lazy">
+        <img src="/site/images/SAMS image 5.webp" class="sams-img-bottom" alt="Seminary Image Bottom" loading="lazy">
+ 
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= FEATURE SUMMARY SECTION ================= -->
+<section class="seminary-features">
+  <div class="container">
+
+    <div class="section-title text-center mb-5">
+      <h2>Forming Faith, Mind & Character</h2>
+      <p>Everything your vocation needs — spiritually, academically, and fraternally.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Feature 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <img src="/site/images/sams image 10.jpg" alt="Formation" loading="lazy">
+          <div class="feature-content">
+            <h4>Human & Spiritual Formation</h4>
+            <p>Building disciplined, prayerful, and responsible future priests.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <img src="/site/images/sams image 7.jpg" alt="Academics" loading="lazy">
+          <div class="feature-content">
+            <h4>Academic Excellence</h4>
+            <p>Strong philosophical and theological foundations for the future Church.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <img src="/site/images/sams image 10.jpg" alt="Community" loading="lazy">
+          <div class="feature-content">
+            <h4>Community Life</h4>
+            <p>Brotherhood, cooperation, discipline, and shared mission in Christ.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <img src="/site/images/sams image 7.jpg" alt="Vocation" loading="lazy">
+          <div class="feature-content">
+            <h4>Vocation & Discernment</h4>
+            <p>Helping young men discover, test, and embrace God’s call.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><section class="mission-vision py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Mission Card -->
+      <div class="col-md-6">
+        <div class="mv-card mv-mission">
+          <div class="mv-header mv-header-mission">
+            <span class="mv-label">Our Mission</span>
+          </div>
+          <div class="mv-body">
+            <p>
+              St. Augustine’s Major Seminary is dedicated to the holistic formation of future priests — spiritually, intellectually, pastorally, and humanly. 
+              Our mission is to nurture men of faith and integrity who will serve the Church and society with compassion, wisdom, and unwavering dedication.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision Card -->
+      <div class="col-md-6">
+        <div class="mv-card mv-vision">
+          <div class="mv-header mv-header-vision">
+            <span class="mv-label">Our Vision</span>
+          </div>
+          <div class="mv-body">
+            <p>
+              To be a beacon of excellence in priestly formation, inspiring generations of leaders who embody Christ’s love and truth. 
+              We envision a seminary community that radiates service, fosters dialogue, and contributes to the renewal of the Church and the transformation of society.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="stats-section">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <div class="col-lg-3 col-6">
+        <div class="stat-box">
+          <i class="bi bi-people"></i>
+          <h2>320+</h2>
+          <p>Seminarians</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div class="stat-box">
+          <i class="bi bi-person-badge"></i>
+          <h2>48</h2>
+          <p>Staff</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div class="stat-box">
+        <i class="bi bi-person-check"></i>
+          <h2>112</h2>
+          <p>Ordained priests</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div class="stat-box">
+          <i class="bi bi-award"></i>
+          <h2>1,600+</h2>
+          <p>Total alumni</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+ 
+ <section class="sermon-section py-5">
+  <div class="container">
+    <div class="row align-items-stretch g-4">
+
+      <!-- Left: Sample Video -->
+      <div class="col-md-6">
+        <div class="sermon-video">
+          <iframe width="100%" height="350" 
+            src="https://www.youtube.com/embed/sampleVideoID" 
+            title="Sample Sermon Video" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right: Expanded Content -->
+      <div class="col-md-6">
+        <div class="sermon-info">
+          <h2 class="sermon-title">Experience Our Reflections</h2>
+          <p class="sermon-text">
+            At St. Augustine Major Seminary, our reflections are more than sermons — 
+            they are moments of inspiration, guidance, and renewal. Each reflection 
+            invites you to pause, listen, and grow in faith.
+          </p>
+          
+<!-- Button + Social Row -->
+<div class="cta-row">
+  <a href="/page/Reflection" class="btn btn-reflection">
+    📖 Watch More Reflections
+  </a>
+  <div class="social-inline">
+    <span class="social-text">Also watch us on:</span>
+    <a href="#" class="social-btn" style="background-color:green; color:white;"><i class="bi bi-youtube"></i></a>
+    <a href="#" class="social-btn" style="background-color:green; color:white;"><i class="bi bi-tiktok"></i></a>
+    <a href="#" class="social-btn" style="background-color:green; color:white;"><i class="bi bi-facebook"></i></a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="formation-live-section">
+  <div class="formation-live-wrap">
+
+    <!-- LEFT TEXT -->
+    <div class="formation-live-text">
+      <div class="live-vertical-line"></div>
+      <div>
+        <h2>Holistic Formation at SAMS</h2>
+        <p>
+         At the heart of priestly formation lies the Holy Spirit, who unites the human, academic, spiritual, and pastoral dimensions into one vocation. None is greater than the other, and if one is missing, formation is incomplete. Each draws strength from the Spirit, showing that vocation is a divine call — not chosen by oneself, but given and sustained by God.
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT LIVE FLOW -->
+    <div class="live-orbit">
+
+      <!-- Energy Ring -->
+      <div class="energy-ring"></div>
+
+      <!-- Holy Spirit Core -->
+      <div class="holy-core">Holy<br>Spirit</div>
+
+      <!-- Orbiting Nodes -->
+      <div class="orbit human-orbit">Human</div>
+      <div class="orbit academic-orbit">Academic</div>
+      <div class="orbit spiritual-orbit">Spiritual</div>
+      <div class="orbit pastoral-orbit">Pastoral</div>
+
+      <!-- Glow Clouds -->
+      <span class="orb-cloud c1"></span>
+      <span class="orb-cloud c2"></span>
+      <span class="orb-cloud c3"></span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="vocation-section d-flex align-items-center" id="vocation">
+  <div class="vocation-inner">
+    <div class="vocation-text">
+      <h1>Answer the Call</h1>
+      <p>
+        Some calls are louder than words — they stir the soul, reshape dreams, and point the heart toward a greater purpose. 
+        The call to the priesthood is one such invitation: a call to live for God, to serve His people, and to become a shepherd of faith, hope, and love.
+      </p>
+      <p>
+        The seminary is where this divine call is nurtured through prayer, study, discipline, and brotherhood. 
+        Admission is not just entry into a school — it is the bold first step into a life of meaning, sacrifice, and eternal impact.
+      </p>
+      <div class="d-flex gap-3 mt-3">
+        <a href="#apply" class="btn btn-primary">Apply Now</a>
+        <a href="#admission-guide" class="btn btn-outline-light">Admission Guide</a> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ALUMNI & IMPACT PREVIEW ================= -->
+<section class="alumni-impact py-5">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="impact-title text-center mb-4">
+      <h2>Our Alumni & Global Impact</h2>
+      <p>Decades of formation producing faithful priests and global missionaries.</p>
+    </div>
+
+    <div class="alumni-carousel position-relative">
+      <!-- Prev Button -->
+      <button class="alumni-arrow prev position-absolute top-50 start-0 translate-middle-y">‹</button>
+
+      <!-- Track -->
+      <div class="impact-story-wrap d-flex overflow-hidden" id="alumni-track">
+        <!-- Story 1 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/sams image 7.jpg" alt="Fr Emmanuel" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Emmanuel</h4>
+            <p class="ordination-date">Ordained: 12th March 2010</p>
+            <p>Serving in rural mission fields across East Africa, building vibrant faith communities.</p>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/sams image 8.jpg" alt="Fr Michael" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Michael</h4>
+            <p class="ordination-date">Ordained: 5th July 2012</p>
+            <p>Director of a diocesan seminary, mentoring future priests across Nigeria.</p>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/sams image 10.jpg" alt="Fr John" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr John</h4>
+            <p class="ordination-date">Ordained: 20th September 2015</p>
+            <p>Serving remote villages with pastoral care, education, and youth outreach.</p>
+          </div>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/priest image.jpg" alt="Fr Peter" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Peter</h4>
+            <p class="ordination-date">Ordained: 18th June 2016</p>
+            <p>Youth apostolate leader and parish mission coordinator.</p>
+          </div>
+        </div>
+
+        <!-- Story 5 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/Bishop 1.jpg" alt="Fr Francis" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Francis</h4>
+            <p class="ordination-date">Ordained: 10th August 2017</p>
+            <p>Coordinator of regional evangelization and pastoral formation.</p>
+          </div>
+        </div>
+
+        <!-- Story 6 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/Bishop 1.jpg" alt="Fr Andrew" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Andrew</h4>
+            <p class="ordination-date">Ordained: 2nd May 2018</p>
+            <p>Administrator in Catholic schools and spiritual director to students.</p>
+          </div>
+        </div>
+
+        <!-- Story 7 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/priest7.jpg" alt="Fr Joseph" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Joseph</h4>
+            <p class="ordination-date">Ordained: 14th July 2019</p>
+            <p>Hospital chaplain and counselor to patients and families.</p>
+          </div>
+        </div>
+
+        <!-- Story 8 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/priest8.jpg" alt="Fr Dominic" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Dominic</h4>
+            <p class="ordination-date">Ordained: 9th April 2020</p>
+            <p>Director of youth, vocation awareness, and catechetical training.</p>
+          </div>
+        </div>
+
+        <!-- Story 9 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/priest9.jpg" alt="Fr Matthew" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Matthew</h4>
+            <p class="ordination-date">Ordained: 11th June 2021</p>
+            <p>Parish priest and senior catechesis instructor.</p>
+          </div>
+        </div>
+
+        <!-- Story 10 -->
+        <div class="impact-story flex-shrink-0 mx-2">
+          <img src="/site/images/priest10.jpg" alt="Fr Luke" class="img-fluid" loading="lazy">
+          <div class="impact-story-content">
+            <h4>Fr Luke</h4>
+            <p class="ordination-date">Ordained: 17th September 2023</p>
+            <p>Missionary priest serving rural Catholic communities with passion.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Button -->
+      <button class="alumni-arrow next position-absolute top-50 end-0 translate-middle-y">›</button>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="impact-btn-wrap text-center mt-4">
+      <a href="/page/alumni" class="impact-btn btn btn-primary px-4 py-2">Meet Our Alumni</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="prayer-donate-section">
+  
+  <!-- LEFT: PRAYER -->
+  <div class="prayer-box">
+    <div class="overlay"></div>
+    <div class="content">
+      <span class="small-title">Expanding your reach</span>
+      <h2>Need Prayer?</h2>
+      <p>
+        What a joy it is to introduce you to our church! You’ll discover that our passion
+        is to provide a place What a joy it is to our passion is to provide a place
+      </p>
+      <a href="#" class="btn-orange">REQUEST A PRAYER</a>
+    </div>
+  </div>
+
+  <!-- RIGHT: DONATION -->
+  <div class="donate-box">
+    <div class="overlay"></div>
+    <div class="content">
+      <span class="small-title">Suppport our projects</span>
+      <h2>Donate Now?</h2>
+
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="progress-labels">
+        </div>
+      </div>
+
+      <a href="#" class="btn-orange">DONATE NOW</a>
+    </div>
+  </div>
+
+</section>
+ 
+
+
+<!-- ================= SEMINARY NEWS & EVENTS ================= -->
+<section class="seminary-news py-5">
+  <div class="container">
+
+    <div class="section-header text-center mb-5">
+      <h2 class="section-title">Seminary News & Events</h2>
+      <p>Stay updated with the latest happenings, achievements, and events at the Seminary.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="news-card">
+          <div class="news-image" style="background-image: url('GRAPHICS/seminary-event1.jpg');"></div>
+          <div class="news-content">
+            <h5>Ordination Ceremony</h5>
+            <p>Celebrating the ordination of our seminarians into priesthood.</p>
+            <div class="d-flex justify-content-between">
+              <div>March 2026</div>
+              <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="news-card">
+          <div class="news-image" style="background-image: url('GRAPHICS/seminary-event2.jpg');"></div>
+          <div class="news-content">
+            <h5>Academic Symposium</h5>
+            <p>Faculty and students gathered to discuss theology and modern challenges.</p>
+            <div class="d-flex justify-content-between">
+              <div>February 2026</div>
+              <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="news-card">
+          <div class="news-image" style="background-image: url('GRAPHICS/seminary-event3.jpg');"></div>
+          <div class="news-content">
+            <h5>Spiritual Retreat</h5>
+            <p>A week of prayer, reflection, and renewal for seminarians.</p>
+            <div class="d-flex justify-content-between">
+              <div>January 2026</div>
+              <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="/page/blog" class="btn btn-primary px-4 py-2">View All News & Events</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SAMS FOOTER (CUSTOMIZED FOR ST. AUGUSTINE MAJOR SEMINARY JOS) ================= -->
+
+  <!-- Footer -->
+  <footer class="sams-footer">
+  <div class="sams-footer-bg"></div>
+  <div class="container-fluid sams-footer-inner px-lg-5 px-3">
+    <div class="sams-footer-col sams-footer-brand">
+      <div class="sams-footer-logo">
+        <img src="http://127.0.0.1:8000/site/images/sams logo.jpeg" alt="SAMS Logo" class="sams-logo-mark" height="44" width="44" loading="lazy">
+        <div class="sams-logo-text">
+          <div class="sams-logo-title">SAMS<span class="sams-logo-sup">JOS</span></div>
+          <div class="sams-logo-sub">St. Augustine Major Seminary</div>
+        </div>
+      </div>
+      <p class="sams-footer-desc">
+        St. Augustine Major Seminary, Jos is a center of priestly formation committed to spiritual, human, intellectual, and pastoral development for service in the Church of God.
+      </p>
+      <div class="sams-footer-socials">
+        <a href="#" aria-label="facebook" class="sams-social"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="tiktok" class="sams-social"><i class="bi bi-tiktok"></i></a>
+        <a href="#" aria-label="youtube" class="sams-social"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="instagram" class="sams-social"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="sams-footer-col sams-footer-links">
+      <h4 class="sams-footer-heading">QUICK LINKS</h4>
+      <ul>
+        <li><a href="http://127.0.0.1:8000">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/page/history">About</a></li>
+        <li><a href="http://127.0.0.1:8000/page/admission">Admission</a></li>
+        <li><a href="http://127.0.0.1:8000/page/vocation-formation">Vocation</a></li>
+        <li><a href="http://127.0.0.1:8000/page/alumni">Alumni</a></li>
+        <li><a href="http://127.0.0.1:8000/page/reflection">📖 Reflection</a></li>
+      </ul>
+    </div>
+
+    <div class="sams-footer-col sams-footer-contact">
+      <h4 class="sams-footer-heading">CONTACT US</h4>
+      <p class="sams-footer-desc">
+        St. Augustine Major Seminary, Jos<br>
+        P.O. Box 1234, Jos, Plateau State, Nigeria<br>
+        Phone: +234 812 345 6789<br>
+        Email: info@samsjos.edu.ng
+      </p>
+    </div>
+
+    <div class="sams-footer-col sams-footer-reflection">
+      <h4 class="sams-footer-heading">DAILY REFLECTIONS</h4>
+      <p class="sams-footer-desc">
+        Nourish your spirit with our daily reflections prepared by the seminary community.
+      </p>
+      <a href="http://127.0.0.1:8000/page/reflection" class="btn btn-outline-light">Read Today's Reflection</a>
+    </div>
+  </div>
+
+  <div class="sams-footer-bottom">
+    <div class="page-wrap sams-footer-bottom-inner">
+      <div class="sams-copyright">
+        Copyright &copy; 2026 St. Augustine Major Seminary, Jos.
+        All Rights Reserved | Website by
+        <a href="https://sophajs.com" target="_blank">Sophajs Global Tech</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('loading-overlay');
+      if (loader) { loader.style.opacity = '0'; setTimeout(() => loader.style.display = 'none', 500); }
+    });
+    setTimeout(() => {
+      const loader = document.getElementById('loading-overlay');
+      if (loader && loader.style.display !== 'none') { loader.style.opacity = '0'; setTimeout(() => loader.style.display = 'none', 500); }
+    }, 5000);
+  </script>
+  </body>
+</html>
