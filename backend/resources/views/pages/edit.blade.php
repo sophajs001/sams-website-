@@ -61,7 +61,6 @@
                         <label for="slug" class="form-label">URL Slug *</label>
                         <input type="text" class="form-control" id="slug" name="slug"
                                value="{{ old('slug', $page->slug) }}" required
-<<<<<<< HEAD
                                placeholder="page-url-slug" {{ $page->is_system ? 'readonly' : '' }}>
                         <small class="form-text text-muted">
                             URL-friendly version of the title.
@@ -86,10 +85,6 @@
                         <label for="excerpt" class="form-label">Excerpt</label>
                         <textarea class="form-control" id="excerpt" name="excerpt" rows="2"
                                   placeholder="Short summary used in listings and previews">{{ old('excerpt', $page->excerpt) }}</textarea>
-=======
-                               placeholder="page-url-slug">
-                        <small class="form-text text-muted">URL-friendly version of the title (no spaces or special characters)</small>
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                     </div>
 
                     <!-- Content -->

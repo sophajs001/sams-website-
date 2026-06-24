@@ -4,16 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Page;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use Illuminate\Support\Str;
-=======
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 
 class PageController extends Controller
 {
     public function index()
     {
-<<<<<<< HEAD
         $pages = Page::orderBy('section')
             ->orderBy('sort_order')
             ->orderBy('title')
@@ -22,10 +18,6 @@ class PageController extends Controller
         $grouped = $pages->getCollection()->groupBy(fn ($p) => $p->section ?: 'other');
 
         return view('pages.index', compact('pages', 'grouped'));
-=======
-        $pages = Page::all();
-        return view('pages.index', compact('pages'));
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
     }
 
     public function create()
@@ -35,7 +27,6 @@ class PageController extends Controller
 
     public function store(Request $request)
     {
-<<<<<<< HEAD
         $data = $this->validateData($request);
         $data['featured_image'] = $this->handleUpload($request, null);
 
@@ -47,17 +38,6 @@ class PageController extends Controller
 
         return redirect()->route('pages.edit', $page)
             ->with('success', 'Page created successfully.');
-=======
-        $request->validate([
-            'slug' => 'required|unique:pages,slug',
-            'title' => 'required|string|max:255',
-            'content' => 'required|string',
-        ]);
-
-        Page::create($request->only(['slug', 'title', 'content']));
-
-        return redirect()->route('pages.index');
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
     }
 
     public function edit(Page $page)
@@ -67,7 +47,6 @@ class PageController extends Controller
 
     public function update(Request $request, Page $page)
     {
-<<<<<<< HEAD
         $data = $this->validateData($request, $page);
         $data['featured_image'] = $this->handleUpload($request, $page->featured_image);
 
@@ -85,22 +64,10 @@ class PageController extends Controller
 
         return redirect()->route('pages.edit', $page)
             ->with('success', 'Page updated successfully.');
-=======
-        $request->validate([
-            'slug' => 'required|unique:pages,slug,' . $page->id,
-            'title' => 'required|string|max:255',
-            'content' => 'required|string',
-        ]);
-
-        $page->update($request->only(['slug', 'title', 'content']));
-
-        return redirect()->route('pages.index');
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
     }
 
     public function destroy(Page $page)
     {
-<<<<<<< HEAD
         if ($page->is_system) {
             return redirect()->route('pages.index')
                 ->with('error', 'System pages cannot be deleted.');
@@ -110,15 +77,10 @@ class PageController extends Controller
 
         return redirect()->route('pages.index')
             ->with('success', 'Page deleted successfully.');
-=======
-        $page->delete();
-        return redirect()->route('pages.index');
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
     }
 
     public function showLanding()
     {
-<<<<<<< HEAD
         $homepage = Page::where('is_homepage', true)
             ->where('status', 'published')
             ->first();
@@ -175,8 +137,4 @@ class PageController extends Controller
 
         return $existing;
     }
-=======
-        return view('pages.landing');
-    }
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 }

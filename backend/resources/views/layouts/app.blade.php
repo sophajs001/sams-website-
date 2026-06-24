@@ -178,6 +178,7 @@
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item">
                                         <a href="{{ route('dashboard') }}">Dashboard</a>
+                                   
                                     </li>
                                     @hasSection('breadcrumb')
                                         @yield('breadcrumb')

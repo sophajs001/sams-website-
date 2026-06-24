@@ -160,36 +160,76 @@
     <div class="row align-items-center g-4">
 
       <!-- Rector Text -->
-      <div class="col-md-6">
-        <div class="rector-text">
-          <h3 class="fw-bold text-success">A Message from Our Rector</h3>
-          <p class="lead mt-3">
-            Welcome to St. Augustine’s Seminary. Here, we are committed to forming men of faith, discipline, and service. 
-            Our mission is to nurture seminarians intellectually, spiritually, and pastorally, preparing them to serve 
-            the Church with dedication and humility. Together with our faculty and staff, we strive to uphold the 
-            Seminary’s tradition of excellence in priestly formation.
-          </p>
-          <div class="mt-4">
-<<<<<<< HEAD
-            
-          </div>
-          <p class="fw-semibold mt-3">— Revd. Fr. Dr. Peter Hassan, Rector</p>
-=======
-            <a href="backend/login" class="btn btn-success btn-lg me-2">Sign In to CMS</a>
-            <a href="backend/login" class="btn btn-outline-light btn-lg">Open Dashboard</a>
-          </div>
-          <p class="fw-semibold mt-3">— Rev. Fr. [Rector’s Name], Rector</p>
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
+<div class="col-md-6">
+    <div class="rector-text">
+        <h3 class="fw-bold text-success">From the Desk of the Rector</h3>
+
+        <p class="lead mt-3">
+            Welcome to <strong>St. Augustine’s Major Seminary</strong>, a distinguished centre of
+            priestly, intellectual, and spiritual formation dedicated to the service of God
+            and His Church. Rooted in the rich tradition of Catholic education, our seminary
+            seeks to form men who are committed to holiness, academic excellence, pastoral
+            charity, and faithful discipleship.
+        </p>
+
+        <p>
+            Inspired by our patron, St. Augustine, we embrace the harmonious pursuit of faith
+            and reason, recognizing that true wisdom is found in the knowledge and love of God.
+            Through a balanced programme of human, spiritual, intellectual, and pastoral
+            formation, we prepare future priests to respond effectively to the challenges and
+            opportunities of contemporary ministry.
+        </p>
+
+        <!-- Hidden Content -->
+        <div class="collapse" id="rectorMessage">
+
+            <p>
+                Our seminary community is built upon prayer, study, fraternity, discipline,
+                and service. Within this environment, seminarians are encouraged to grow in
+                virtue, deepen their relationship with Christ, and acquire the knowledge and
+                skills necessary for fruitful priestly ministry. Supported by a dedicated
+                faculty and formation team, they are formed to become compassionate shepherds,
+                capable leaders, and authentic witnesses of the Gospel.
+            </p>
+
+            <p>
+                As a centre of theological and philosophical learning, St. Augustine’s Major
+                Seminary remains committed to fostering scholarship, critical inquiry, and a
+                profound appreciation of the Church’s intellectual heritage. We strive to form
+                men who will contribute meaningfully to the evangelizing mission of the Church
+                and the transformation of society in the light of Christian values.
+            </p>
+
+            <p>
+                We invite you to learn more about our seminary, our programmes, and our mission.
+                May this institution continue to serve as a beacon of faith, wisdom, and hope
+                for the Church and the wider community.
+            </p>
+
         </div>
-      </div>
+
+        <!-- Read More -->
+        <a id="rectorMessageToggle" class="text-success fw-semibold text-decoration-none"
+           data-bs-toggle="collapse"
+           href="#rectorMessage"
+           role="button"
+           aria-expanded="false"
+           aria-controls="rectorMessage">
+            Continue Reading →
+        </a>
+
+        <p class="fw-semibold mt-4">
+            Revd. Fr. Dr. Peter Hassan<br>
+            <span class="text-muted">
+                Rector, St. Augustine’s Major Seminary
+            </span>
+        </p>
+    </div>
+</div>
 
       <!-- Rector Image -->
       <div class="col-md-6 text-center">
-<<<<<<< HEAD
         <img src="images/RECTOR SAMS.jpeg" alt="Rector Image" class="img-fluid rounded shadow" style="max-height:400px; object-fit:cover;" loading="lazy">
-=======
-        <img src="images/Bishop 1.jpg" alt="Rector Image" class="img-fluid rounded shadow" style="max-height:400px; object-fit:cover;" loading="lazy">
->>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
       </div>
 
     </div>
@@ -787,6 +827,18 @@
       }, 500);
     }
   }, 5000);
+
+  // Toggle the Continue Reading link when collapse content is shown/hidden
+  const rectorToggle = document.getElementById('rectorMessageToggle');
+  const rectorCollapse = document.getElementById('rectorMessage');
+  if (rectorToggle && rectorCollapse) {
+    rectorCollapse.addEventListener('shown.bs.collapse', () => {
+      rectorToggle.textContent = 'Collapse ←';
+    });
+    rectorCollapse.addEventListener('hidden.bs.collapse', () => {
+      rectorToggle.textContent = 'Continue Reading →';
+    });
+  }
 </script>
 </body>
 </html>
