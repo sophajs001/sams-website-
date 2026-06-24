@@ -30,12 +30,15 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
+<<<<<<< HEAD
                 <li class="menu-item">
                     <a href="{{ url('/') }}" target="_blank" rel="noopener" class="menu-link">
                         <i class="bi bi-globe"></i>
                         <span>View Site</span>
                     </a>
                 </li>
+=======
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 
                 <li class="menu-section">CONTENT</li>
                 <li class="menu-item {{ request()->routeIs('pages.*') ? 'active expanded' : '' }}">
@@ -49,6 +52,7 @@
                     </ul>
                 </li>
 
+<<<<<<< HEAD
                 @php
                     $sidebarPages = collect();
                     if (\Illuminate\Support\Facades\Schema::hasTable('pages')) {
@@ -87,6 +91,8 @@
                     @endif
                 @endforeach
 
+=======
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                 <li class="menu-item {{ request()->routeIs('posts.*') ? 'active expanded' : '' }}">
                     <a href="{{ route('posts.index') }}" class="menu-link">
                         <i class="bi bi-newspaper"></i>
@@ -178,7 +184,10 @@
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item">
                                         <a href="{{ route('dashboard') }}">Dashboard</a>
+<<<<<<< HEAD
                                    
+=======
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                                     </li>
                                     @hasSection('breadcrumb')
                                         @yield('breadcrumb')
@@ -190,10 +199,13 @@
 
                     <div class="header-actions">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="{{ url('/') }}" target="_blank" rel="noopener" class="btn btn-outline-success btn-sm me-3">
                             <i class="bi bi-box-arrow-up-right"></i>
                             Visit Site
                         </a>
+=======
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 =======
 >>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                         <div class="user-info">

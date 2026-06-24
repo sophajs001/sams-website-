@@ -51,6 +51,7 @@
                         <small class="form-text text-muted">URL-friendly version of the title (no spaces or special characters)</small>
                     </div>
 
+<<<<<<< HEAD
                     <div class="form-group">
                         <label for="section" class="form-label">Section</label>
                         <select class="form-control" id="section" name="section">
@@ -68,6 +69,8 @@
                                   placeholder="Short summary used in listings and previews">{{ old('excerpt') }}</textarea>
                     </div>
 
+=======
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                     <!-- Content -->
                     <div class="form-group">
                         <label for="content" class="form-label">Page Content *</label>

@@ -12,6 +12,7 @@ class Page extends Model
     protected $fillable = [
         'slug',
         'title',
+<<<<<<< HEAD
         'section',
         'excerpt',
         'content',
@@ -37,5 +38,8 @@ class Page extends Model
         'resources' => 'Resources',
         'info' => 'Info',
         'community' => 'Community',
+=======
+        'content',
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
     ];
 }

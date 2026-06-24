@@ -10,6 +10,7 @@ use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Serve frontend static assets (style.css, images/*) from the sibling frontend/ folder
 Route::get('/site/{path}', function (string $path) {
     $file = realpath(base_path('../frontend/' . $path));
@@ -44,6 +45,9 @@ Route::get('/p/{slug}', [PageController::class, 'showBySlug'])->name('pages.show
 
 // Public friendly URLs for each system page slug (e.g. /history, /admission, /reflection)
 Route::get('/page/{slug}', [PageController::class, 'showBySlug'])->name('site.page');
+=======
+Route::get('/', [PageController::class, 'showLanding'])->name('landing');
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 =======
 Route::get('/', [PageController::class, 'showLanding'])->name('landing');
 >>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f

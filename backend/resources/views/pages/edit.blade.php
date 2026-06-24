@@ -61,6 +61,7 @@
                         <label for="slug" class="form-label">URL Slug *</label>
                         <input type="text" class="form-control" id="slug" name="slug"
                                value="{{ old('slug', $page->slug) }}" required
+<<<<<<< HEAD
                                placeholder="page-url-slug" {{ $page->is_system ? 'readonly' : '' }}>
                         <small class="form-text text-muted">
                             URL-friendly version of the title.
@@ -85,6 +86,10 @@
                         <label for="excerpt" class="form-label">Excerpt</label>
                         <textarea class="form-control" id="excerpt" name="excerpt" rows="2"
                                   placeholder="Short summary used in listings and previews">{{ old('excerpt', $page->excerpt) }}</textarea>
+=======
+                               placeholder="page-url-slug">
+                        <small class="form-text text-muted">URL-friendly version of the title (no spaces or special characters)</small>
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                     </div>
 
                     <!-- Content -->
@@ -203,6 +208,7 @@
                     Cancel
                 </a>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 @unless($page->is_system)
                     <div class="float-end">
                         <form action="{{ route('pages.destroy', $page) }}" method="POST" class="d-inline"
@@ -217,6 +223,8 @@
                     </div>
                 @endunless
 =======
+=======
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
                 <div class="float-end">
                     <form action="{{ route('pages.destroy', $page) }}" method="POST" class="d-inline"
                           onsubmit="return confirm('Are you sure you want to delete this page? This action cannot be undone.')">
@@ -228,6 +236,9 @@
                         </button>
                     </form>
                 </div>
+<<<<<<< HEAD
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
+=======
 >>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
             </div>
         </form>
@@ -235,10 +246,15 @@
 
     <script>
 <<<<<<< HEAD
+<<<<<<< HEAD
         const slugInput = document.getElementById('slug');
         // Auto-generate slug from title (skipped if slug field is readonly, e.g. system pages)
         document.getElementById('title').addEventListener('input', function() {
             if (slugInput.readOnly) return;
+=======
+        // Auto-generate slug from title
+        document.getElementById('title').addEventListener('input', function() {
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 =======
         // Auto-generate slug from title
         document.getElementById('title').addEventListener('input', function() {
@@ -250,7 +266,11 @@
                 .replace(/-+/g, '-')
                 .trim('-');
 <<<<<<< HEAD
+<<<<<<< HEAD
             slugInput.value = slug;
+=======
+            document.getElementById('slug').value = slug;
+>>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
 =======
             document.getElementById('slug').value = slug;
 >>>>>>> 8783bc1e92df78ff526aca92b0cbd1f45f4c566f
